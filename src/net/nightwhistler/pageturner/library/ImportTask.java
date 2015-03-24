@@ -56,8 +56,8 @@ public class ImportTask extends QueueableAsyncTask<File, Integer, Void> implemen
 	
 	private int foldersScanned = 0;
 	private int booksImported = 0;
-
-    private boolean emptyLibrary;
+    // CAMBIADO EL PERMISO A PUBLICO
+    public boolean emptyLibrary;
     private boolean silent;
 	
 	private String importFailed = null;
@@ -105,6 +105,8 @@ public class ImportTask extends QueueableAsyncTask<File, Integer, Void> implemen
         the user to import.
          */
         if ( silent && libraryService.findAllByTitle(null).getSize() == 0 ) {
+            LOG.error("empty database empty vacio");
+            this.emptyLibrary = true;
             return;
         }
 
@@ -113,7 +115,7 @@ public class ImportTask extends QueueableAsyncTask<File, Integer, Void> implemen
             importFailed = String.format( context.getString(R.string.no_such_folder), parent.getPath());
             return;
         }
-
+        LOG.error("Busca Titulo");
         this.emptyLibrary = this.libraryService.findAllByTitle(null).getSize() == 0;
 
         List<File> books = new ArrayList<>();
@@ -143,7 +145,8 @@ public class ImportTask extends QueueableAsyncTask<File, Integer, Void> implemen
     }
 	
 	private void findEpubsInFolder( File folder, List<File> items) {
-		
+
+        LOG.debug("CARGANDO LIBRERIA findEpubsInFolder");
 		if ( folder == null  || ! folder.exists() ) {
 			return;
 		}

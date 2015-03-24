@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:key="PageTurnerState">
-	<!--
+	
 	<PreferenceCategory
                 android:title="@string/pref_sync_settings"> 
                  
@@ -46,7 +46,7 @@
 	            />
 	
 	</PreferenceCategory>
--->
+
     
 	<PreferenceCategory
             android:key="nook_prefs"
@@ -62,7 +62,7 @@
 
         </PreferenceCategory>
 
-<!--
+
 	<PreferenceCategory
                 android:title="@string/pref_autoscroll_settings">  		
 
@@ -86,8 +86,8 @@
 				/>
 				
 	</PreferenceCategory>
-    -->
-<!--
+    
+
 	<PreferenceCategory
                 android:title="@string/pref_my_books_settings">
                 
@@ -108,8 +108,8 @@
                     />
 
     </PreferenceCategory>
-    -->
-<!--
+    
+
     <PreferenceCategory android:title="@string/opds_settings">
 				
                <PreferenceScreen        			
@@ -127,9 +127,9 @@
                 android:defaultValue="false" />
                 
     </PreferenceCategory>
--->
 
-    <!--
+
+    
 	<PreferenceCategory
                 android:key="visual_prefs"
                 android:title="@string/pref_visual_settings">  
@@ -214,18 +214,18 @@
 	            
 	
 	</PreferenceCategory>
-    -->
+    
 
 	<PreferenceCategory
                 android:title="@string/pref_text_display_settings">
 
 
-     <!--   <CheckBoxPreference
+        <CheckBoxPreference
                 android:key="allow_styling"
                 android:title="@string/pref_use_publisher_style"
                 android:summary="@string/pref_use_publisher_style_summary"
                 android:defaultValue="true"
-                /> -->
+                /> 
 
         <ListPreference
      		android:key="font_face"
@@ -235,29 +235,29 @@
         	android:entries="@array/fontLabels"
         	android:entryValues="@array/fonts" />
 
-     <!--<ListPreference
+     <ListPreference
      		android:key="serif_font"
             android:title="@string/pref_serif_font"
             android:summary="@string/pref_serif_summary"            
         	android:defaultValue="gen_book_bas"
         	android:entries="@array/fontLabels"
-        	android:entryValues="@array/fonts" />-->
+        	android:entryValues="@array/fonts" />
      
-     <!--<ListPreference
+     <ListPreference
      		android:key="sans_serif_font"
             android:title="@string/pref_sans_serif_font"
             android:summary="@string/pref_sans_serif_summary"            
         	android:defaultValue="sans"
         	android:entries="@array/fontLabels"
-        	android:entryValues="@array/fonts" />-->
+        	android:entryValues="@array/fonts" />
            
                 
-     <!--<CheckBoxPreference
+     <CheckBoxPreference
 				android:key="strip_whitespace"
 				android:title="@string/pref_strip_whitespace"
 				android:summary="@string/pref_strip_whitespace_summary"
 				android:defaultValue="true"
-				/>-->
+				/>
 	
 	<com.hlidskialf.android.preference.SeekBarPreference
 				android:key="itext_size"
@@ -267,7 +267,7 @@
 				android:defaultValue="18"
 				android:max="48"
 				/>
-        <!--
+        
         <com.hlidskialf.android.preference.SeekBarPreference
                     android:key="margin_h"
                     android:title="@string/pref_margin_h"
@@ -275,27 +275,27 @@
                     android:dialogTitle="@string/pref_margin_h"
                     android:defaultValue="30"
                     android:max="150"
-                    />-->
+                    />
 
-        <!--<com.hlidskialf.android.preference.SeekBarPreference
+        <com.hlidskialf.android.preference.SeekBarPreference
                     android:key="margin_v"
                     android:title="@string/pref_margin_v"
                     android:summary="@string/pref_margin_v_summary"
                     android:dialogTitle="@string/pref_margin_v"
                     android:defaultValue="25"
                     android:max="150"
-                    />-->
-        <!--<com.hlidskialf.android.preference.SeekBarPreference
+                    />
+        <com.hlidskialf.android.preference.SeekBarPreference
                     android:key="line_spacing"
                     android:title="@string/pref_line_spacing"
                     android:summary="@string/pref_line_spacing_summary"
                     android:dialogTitle="@string/pref_line_spacing"
                     android:defaultValue="0"
                     android:max="50"
-                    />-->
+                    />
         
 	</PreferenceCategory>		
-	<!--
+	
 	<PreferenceCategory
                 android:title="@string/pref_colour_settings">
         
@@ -352,8 +352,8 @@
     	
     					
     </PreferenceCategory>
-    -->
-    <!--
+    
+    
     <PreferenceCategory
                 android:title="@string/pref_animations">
         
@@ -376,8 +376,8 @@
      
                 
     </PreferenceCategory>
--->
-    <!--
+
+    
 	<PreferenceCategory
                 android:title="@string/pref_navigation_settings">
          
@@ -433,8 +433,8 @@
             android:dependency="scrolling" />           
                 
     </PreferenceCategory>
-    -->
-<!--
+    
+
     <PreferenceCategory
             android:title="@string/pref_dev_settings">
 
@@ -445,5 +445,5 @@
                         android:defaultValue="true"/>
 
     </PreferenceCategory>
--->
+
 </PreferenceScreen>

@@ -17,12 +17,17 @@
  * along with PageTurner.  If not, see <http://www.gnu.org/licenses/>.*
  */
 package net.nightwhistler.pageturner.fragment;
-
+import java.nio.channels.FileChannel;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
+import java.nio.ByteBuffer;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
+import java.io.InputStream;
+import android.content.res.AssetManager;
 import android.content.Intent;
 import android.database.sqlite.SQLiteException;
 import android.graphics.Bitmap;
@@ -65,17 +70,23 @@ import org.slf4j.LoggerFactory;
 import roboguice.inject.InjectView;
 
 import java.io.File;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.util.*;
 
 import static java.lang.Character.toUpperCase;
+import static java.nio.channels.Channels.*;
 import static jedi.functional.FunctionalPrimitives.isEmpty;
 import static jedi.option.Options.none;
 import static jedi.option.Options.option;
 import static jedi.option.Options.some;
 import static net.nightwhistler.ui.UiUtils.onCollapse;
 import static net.nightwhistler.ui.UiUtils.onMenuPress;
+import android.os.Environment;
 import static net.nightwhistler.pageturner.PlatformUtil.isIntentAvailable;
+
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 
 public class LibraryFragment extends RoboSherlockFragment implements ImportCallback {
 
@@ -214,19 +225,133 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 
         refreshView();
 
+        LOG.debug("CARGANDO LIBRERIA "+config.getLibraryFolder());
 		Option<File> libraryFolder = config.getLibraryFolder();
+        String mensaje = Environment.getDataDirectory().getAbsolutePath();
 
-		libraryFolder.match( folder -> {
-			executeTask(new CleanFilesTask(libraryService, this::booksDeleted) );
-			executeTask(new ImportTask(getActivity(), libraryService, this, config, config.isCopyToLibrayEnabled(),
-					true), folder );
-		}, () -> {
-			LOG.error("No library folder present!");
-			Toast.makeText( context, R.string.library_failed, Toast.LENGTH_LONG ).show();
-		});
+        LOG.debug("DIRECTORIO => "+mensaje + " => "+ Environment.getRootDirectory().getAbsolutePath());
+		libraryFolder.match(folder -> {
+            LOG.error("ACA "+folder.getAbsolutePath());
+            if(!folder.exists()){
+                LOG.debug(" NO EXISTE");
+                folder.mkdirs();
+                folder.mkdir();
+            }
+            else{
+                LOG.debug(" EXISTE");
+            }
+
+            if (folder.isDirectory()) {
+                LOG.debug("ES DIRECTORIO");
+            }
+            executeTask(new CleanFilesTask(libraryService, this::booksDeleted));
+            ImportTask task = new ImportTask(getActivity(), libraryService, this, config, config.isCopyToLibrayEnabled(), true);
+            executeTask(task, folder);
+            //if(task.emptyLibrary==true){
+            if(libraryService.findAllByTitle(null).getSize() == 0){
+                LOG.debug("VACIO copia los ficheros");
+                /**
+                 *  INSERTANDO ARCHIVOS
+                 */
+                File folderToScan;
+                AssetManager am = context.getAssets();
+                try {
+                    // InputStream is =am.open("beep.mp3");
+                    folder.exists();
+                    String[] files = am.list("epub");
+                    for(int i=0; i<files.length; i++)
+                    {
+                        LOG.debug("\n File :"+i+" Name => "+files[i]);
+
+                        InputStream in = am.open("epub/"+files[i]); //"epub/"+
+                       // LOG.debug("Se puede escribir  "+in.read());
+                        File outFile = new File(""+folder.getAbsolutePath() +"/"+files[i]);
+                        LOG.debug(" Name => "+files[i] + " => Se puede Escribir      "+outFile.canWrite());
+                        if(!outFile.exists()) {
+                            outFile.createNewFile();
+                        }
+
+                        writeToFile(in, ""+folder.getAbsolutePath() +"/"+files[i]);
+                        /*
+                        FileChannel origen = null;
+                        FileChannel destino = null;
+                        try {
+                            origen = (FileChannel) newChannel(in);
+                            destino = new FileOutputStream(outFile).getChannel();
+
+                            long count = 0;
+                            long size = origen.size();
+                            while((count += destino.transferFrom(origen, count, size-count))<size);
+                        }
+                        finally {
+                            if(origen != null) {
+                                origen.close();
+                            }
+                            if(destino != null) {
+                                destino.close();
+                            }
+                        }
+                        */
+
+                        //File outFile = new File(""+config.getLibraryFolder()
+                         //       +"/"+files[i]);
+                        /*
+                        LOG.debug("Copiando fichero "+ outFile.getAbsolutePath());
+                        OutputStream out = new FileOutputStream(outFile);
+
+                        byte[] buffer = new byte[1024];
+                        int read;
+                        while((read = in.read(buffer)) != -1){
+                            out.write(buffer, 0, read);
+                        }
+                        in.close();
+                        out.flush();
+                        out.close();*/
+                        LOG.debug(" Name => "+files[i] + " => Tamaño    "+outFile.length());
+                        LOG.debug(" Name => "+files[i] + " => Es un fichero    "+outFile.isFile());
+                        LOG.debug(" Name => "+files[i] + " => Se puede leer    "+outFile.canRead());
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                //folderToScan = new File(""+config.getLibraryFolder());
+                // startImport(folderToScan, true);
+                LOG.debug("FINALIZA COPIA");
+                startImport(folder, true);
+                /**
+                 *
+                 */
+            }
+            else{
+                LOG.debug("NO INGRESA ELSE");
+            }
+            LOG.error("FINALIZA ACA");
+        }, () -> {
+            LOG.error("No library folder present!");
+
+            Toast.makeText(context, R.string.library_failed, Toast.LENGTH_LONG).show();
+        });
 
 	}
 
+    private void writeToFile(InputStream stream, String filePath) throws IOException {
+        FileChannel outChannel = new FileOutputStream(filePath).getChannel();
+        ReadableByteChannel inChannel = Channels.newChannel(stream);
+        ByteBuffer buffer = ByteBuffer.allocate(1024);
+
+        while(true) {
+            if(inChannel.read(buffer) == -1) {
+                break;
+            }
+
+            buffer.flip();
+            outChannel.write(buffer);
+            buffer.clear();
+        }
+
+        inChannel.close();
+        outChannel.close();
+    }
     private <A,B,C> void executeTask( QueueableAsyncTask<A,B,C> task, A... parameters ) {
         setSupportProgressBarIndeterminateVisibility(true);
         this.taskQueue.executeTask(task, parameters);
