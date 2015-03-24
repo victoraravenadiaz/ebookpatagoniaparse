@@ -177,7 +177,8 @@ public abstract class PageTurnerActivity extends RoboSherlockFragmentActivity {
         result.add( navigate(getString(R.string.open_library), LibraryActivity.class) );
       //  result.add( navigate(getString(R.string.download), CatalogActivity.class));
 
-        result.add( new NavigationCallback(getString(R.string.prefs)).setOnClick(this::startPreferences));
+        //PREFERENCIAS
+        //result.add( new NavigationCallback(getString(R.string.prefs)).setOnClick(this::startPreferences));
 
         return result;
     }

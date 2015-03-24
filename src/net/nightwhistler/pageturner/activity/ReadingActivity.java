@@ -132,8 +132,8 @@ public class ReadingActivity extends PageTurnerActivity {
 
         //menuItems.add( new NavigationCallback(getString(R.string.download))
           //      .setOnClick(() -> launchActivity(CatalogActivity.class)));
-
-        menuItems.add( new NavigationCallback(getString(R.string.prefs)).setOnClick(this::startPreferences));
+           //PREFERENCIAS
+        //menuItems.add( new NavigationCallback(getString(R.string.prefs)).setOnClick(this::startPreferences));
 
         return menuItems;
     }

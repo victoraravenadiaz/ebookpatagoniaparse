@@ -107,6 +107,8 @@ public class TextSelectionActions implements ActionMode.Callback {
                             selectedTextProvider.getSelectedText().forEach( callBack::lookupDictionary )));
         }
 
+       /*
+        // WIKIPEDIA Y GOOGLE
         menu.add(R.string.lookup_wiktionary)
                 .setOnMenuItemClickListener( react(mode, () ->
                         selectedTextProvider.getSelectedText().forEach(callBack::lookupWiktionary)));
@@ -114,7 +116,7 @@ public class TextSelectionActions implements ActionMode.Callback {
         menu.add(R.string.wikipedia_lookup)
                 .setOnMenuItemClickListener( react( mode, () ->
                         selectedTextProvider.getSelectedText().forEach(callBack::lookupWikipedia)));
-
+        */
         menu.add(R.string.google_lookup)
                 .setOnMenuItemClickListener( react( mode, () ->
                         selectedTextProvider.getSelectedText().forEach(callBack::lookupGoogle)));

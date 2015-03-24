@@ -532,8 +532,8 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 
         onMenuPress( menu, R.id.shelves_view ).thenDo( toggleListener );
         //onMenuPress( menu, R.id.list_view ).thenDo( toggleListener );
-
-        onMenuPress( menu, R.id.scan_books ).thenDo( this::showImportDialog );
+        //OCULTAR BOTOM AGREGAR ARCHIVO
+        //onMenuPress( menu, R.id.scan_books ).thenDo( this::showImportDialog );
         //onMenuPress( menu, R.id.about ).thenDo( dialogFactory.buildAboutDialog()::show );
 
         onMenuPress( menu, R.id.profile_day ).thenDo(() -> switchToColourProfile(ColourProfile.DAY) );

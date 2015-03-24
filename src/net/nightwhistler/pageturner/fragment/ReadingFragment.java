@@ -1224,21 +1224,22 @@ public class ReadingFragment extends RoboSherlockFragment implements
                 highLight( startIndex, endIndex, word.toString() );
                 return false;
             });
-
+            /*
+             // GOOGLE Y WIKIPEDIA
 			android.view.MenuItem lookUpWikipediaItem = menu
 					.add(getString(R.string.wikipedia_lookup));
 
             onMenuPress(lookUpWikipediaItem).thenDo(
                     () -> lookupWikipedia(word.toString()));
 
-
-            android.view.MenuItem lookUpWiktionaryItem = menu
-                    .add(getString(R.string.lookup_wiktionary));
-
+            **
+           // android.view.MenuItem lookUpWiktionaryItem = menu
+              //      .add(getString(R.string.lookup_wiktionary));
+/*
             lookUpWiktionaryItem.setOnMenuItemClickListener( item -> {
                     lookupWiktionary(word.toString());
                     return true;
-            });
+            });*/
 
 			android.view.MenuItem lookupGoogleItem = menu
 					.add(getString(R.string.google_lookup));

@@ -136,7 +136,7 @@
 
     <string name="download_complete">Descarga completada.\nEl libro ha sido añadido a su biblioteca.</string>
 
-
+    <string name="now_reading">Libro: %s</string>
 
     <string name="custom_site">Mi propio sitio OPDS </string>
     <string name="add_site">Añadir sitio propio</string>

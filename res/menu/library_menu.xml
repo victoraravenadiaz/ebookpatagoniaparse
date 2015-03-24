@@ -29,13 +29,14 @@
           android:icon="@drawable/file"
            />
 -->
+    <!--
     <item
         android:id="@+id/scan_books"
         android:icon="@drawable/book_add"
         android:title="@string/scan_books"
         android:showAsAction="ifRoom"
         />
-
+-->
     <item android:id="@+id/menu_search"
           android:icon="@drawable/zoom"
           android:title="@string/search_library"
