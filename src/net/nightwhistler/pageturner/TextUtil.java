@@ -19,9 +19,12 @@
 package net.nightwhistler.pageturner;
 
 import android.text.Spannable;
-
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.io.IOException;
 
 public class TextUtil {
 
@@ -63,6 +66,25 @@ public class TextUtil {
 
         return text;
     }
+    public static boolean existeTexto(String sTexto, String sTextoBuscado){
 
-
+        if(sTexto.indexOf(sTextoBuscado) > -1){
+            return true;
+        }
+        return false;
+    }
+    /** Convierte bytes en texto
+     * @param inputStream de tipo InputStream
+     * */
+    public static String btoString( InputStream inputStream ) throws IOException
+    {
+        ByteArrayOutputStream b = new ByteArrayOutputStream();
+        byte[] bytes = new byte[4096];
+        int len=0;
+        while ( (len=inputStream.read(bytes))>0 )
+        {
+            b.write(bytes,0,len);
+        }
+        return new String( b.toByteArray(),"UTF8");
+    }
 }

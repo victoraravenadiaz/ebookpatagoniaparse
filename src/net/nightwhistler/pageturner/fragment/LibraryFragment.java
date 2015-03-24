@@ -18,6 +18,10 @@
  */
 package net.nightwhistler.pageturner.fragment;
 import java.nio.channels.FileChannel;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONArray;
+import net.nightwhistler.pageturner.TextUtil;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.nio.ByteBuffer;
@@ -67,6 +71,8 @@ import net.nightwhistler.pageturner.view.BookCaseView;
 import net.nightwhistler.pageturner.view.FastBitmapDrawable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.w3c.dom.Text;
+
 import roboguice.inject.InjectView;
 
 import java.io.File;
@@ -417,8 +423,9 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
         if ( ! isAdded() || libraryBook == null ) {
             return;
         }
-		
-		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 		builder.setTitle(R.string.book_details);
 		LayoutInflater inflater = PlatformUtil.getLayoutInflater(getActivity());
 		
@@ -449,6 +456,28 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 		authorView.setText( authorText );
 		//fileName.setText( libraryBook.getFileName() );
 
+        AssetManager am = context.getAssets();
+        String detalleLibro = "";
+        try {
+            InputStream in = am.open("meta.json");
+            String json = TextUtil.btoString(in);
+
+            if( in != null )
+            {
+                try{
+                    in.close();
+                }
+                catch( IOException ex )
+                {
+                    LOG.error(ex.getMessage());
+                }
+            }
+            LOG.debug("JSON =>"+json);
+              detalleLibro = buscarInformacion(json,libraryBook.getFileName());
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 		if (libraryBook.getLastRead() != null && ! libraryBook.getLastRead().equals(new Date(0))) {
 			String lastReadText = String.format(getString(R.string.last_read),
 					DATE_FORMAT.format(libraryBook.getLastRead()));
@@ -464,8 +493,14 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 
         HtmlSpanner spanner = new HtmlSpanner();
         spanner.unregisterHandler("img" ); //We don't want to render images
+        if(!"".equals(detalleLibro)){
+            descriptionView.setText(spanner.fromHtml( detalleLibro));
+            LOG.debug("DETALLE LIBRO => "+detalleLibro);
+        }
+        else{
+            descriptionView.setText(spanner.fromHtml( libraryBook.getDescription()));
+        }
 
-		descriptionView.setText(spanner.fromHtml( libraryBook.getDescription()));
 
         /*builder.setNeutralButton(R.string.delete, (dialog, which) -> {
             libraryService.deleteBook( libraryBook.getFileName() );
@@ -480,7 +515,37 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 
 		builder.show();
 	}
-	
+
+    protected String  buscarInformacion(String jsonStr, String textoDocumento) {
+
+
+        if (jsonStr != null) {
+            try {
+                JSONObject jsonObj = new JSONObject(jsonStr);
+                // Getting JSON Array node
+                JSONArray pers = jsonObj.getJSONArray("");
+
+                // looping through All Equipos
+                for (int i = 0; i < pers.length(); i++) {
+                    JSONObject c = pers.getJSONObject(i);
+                    String eISBN = c.getString("eISBN");
+                    if(TextUtil.existeTexto(textoDocumento,eISBN)){
+                        //RECOJEMOS DATOS EN VARIABLES
+                        String descripcion = c.getString("DescripciÃ³n");
+                        return descripcion;
+                    }
+
+
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        } else {
+            LOG.error("ServiceHandler", "Esta habiendo problemas para cargar el JSON");
+        }
+        return "";
+    }
+
 	private void openBook(LibraryBook libraryBook) {
 		Intent intent = new Intent(getActivity(), ReadingActivity.class);
         config.setLastActivity( ReadingActivity.class );
