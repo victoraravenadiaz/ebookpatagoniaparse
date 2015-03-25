@@ -531,7 +531,7 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
                     String eISBN = c.getString("eISBN");
                     if(TextUtil.existeTexto(textoDocumento,eISBN)){
                         //RECOJEMOS DATOS EN VARIABLES
-                        String descripcion = c.getString("DescripciÃ³n");
+                        String descripcion = c.getString("Descripcion");
                         return descripcion;
                     }
 
