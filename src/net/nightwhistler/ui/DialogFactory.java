@@ -87,7 +87,7 @@ public class DialogFactory {
 		AlertDialog.Builder builder = new AlertDialog.Builder(context);
 		builder.setTitle(R.string.about);
 		builder.setIcon(R.drawable.page_turner);
-
+        // ACERCA DE
 		String version = "";
 		try {
 			version = context.getPackageManager().getPackageInfo(
@@ -96,9 +96,9 @@ public class DialogFactory {
 			// Huh? Really?
 		}
 
-		String html = "<h2>" + context.getString(R.string.app_name) + " " +  version + "</h2>";
+		String html = "<h2>" + context.getString(R.string.app_name) + " </h2>";
 		html += context.getString(R.string.about_gpl);
-		html += "<br/><a href='http://pageturner-reader.org'>http://pageturner-reader.org</a>";
+    	html += "<br/><a href='mailto:info@ebookspatagonia.com?subject=info'>"+context.getString(R.string.contact)+"</a>";
 
 		builder.setMessage( Html.fromHtml(html));
 

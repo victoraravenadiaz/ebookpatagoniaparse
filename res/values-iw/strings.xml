@@ -13,8 +13,6 @@
   <string name="prefs">הגדרות</string>
   <string name="show_toc">הראה טבלת תוכן עניינים</string>
   <string name="rolling_blind">גלילה אוטומטית</string>
-  <string name="about">אודות פייג\'-טרנר</string>
-  <string name="about_gpl">פייג\'-טרנר היא תוכנה חופשית תחת הרשאת GPL v3.</string>
   <string name="error_open_bk">אירעה שגיאה בפתיחת ספר: %s</string>
   <string name="dictionary_lookup">מצא במילון</string>
   <string name="wikipedia_lookup">חפש בוויקיפדיה</string>

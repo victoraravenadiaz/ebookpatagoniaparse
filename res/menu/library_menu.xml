@@ -43,10 +43,10 @@
           android:orderInCategory="0"
           android:actionViewClass="com.actionbarsherlock.widget.SearchView"
           android:showAsAction="ifRoom|collapseActionView" />
-<!--
+
     <item
         android:id="@+id/about"
         android:icon="@drawable/info"
         android:title="@string/about"/>
--->
+
 </menu>

@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package net.nightwhistler.pageturner;
+package net.nightwhistler.pageturner.test;
 
 public final class R {
     public static final class array {
@@ -789,30 +789,32 @@ containing a value of this type.
         public static final int gateway=0x7f020087;
         public static final int ic_drawer=0x7f020088;
         public static final int info=0x7f020089;
-        public static final int list=0x7f02008a;
-        public static final int list_activated_holo=0x7f02008b;
-        public static final int moon=0x7f02008c;
-        public static final int next=0x7f02008d;
-        public static final int page_turner=0x7f02008e;
-        public static final int page_turner_copia=0x7f02008f;
-        public static final int play=0x7f020090;
-        public static final int play_pause=0x7f020091;
-        public static final int previous=0x7f020092;
-        public static final int selection_rectangular=0x7f020093;
-        public static final int shelf_single=0x7f020094;
-        public static final int shelf_single_copia=0x7f020095;
-        public static final int shelf_single_dark=0x7f020096;
-        public static final int shelf_single_dark_copia=0x7f020097;
-        public static final int shelves=0x7f020098;
-        public static final int speech_balloon=0x7f020099;
-        public static final int stop=0x7f02009a;
-        public static final int sun=0x7f02009b;
-        public static final int trash_can=0x7f02009c;
-        public static final int unknown_cover=0x7f02009d;
-        public static final int user=0x7f02009e;
-        public static final int zoom=0x7f02009f;
+        public static final int less=0x7f02008a;
+        public static final int list=0x7f02008b;
+        public static final int list_activated_holo=0x7f02008c;
+        public static final int moon=0x7f02008d;
+        public static final int next=0x7f02008e;
+        public static final int page_turner=0x7f02008f;
+        public static final int page_turner_copia=0x7f020090;
+        public static final int play=0x7f020091;
+        public static final int play_pause=0x7f020092;
+        public static final int previous=0x7f020093;
+        public static final int selection_rectangular=0x7f020094;
+        public static final int shelf_single=0x7f020095;
+        public static final int shelf_single_copia=0x7f020096;
+        public static final int shelf_single_dark=0x7f020097;
+        public static final int shelf_single_dark_copia=0x7f020098;
+        public static final int shelves=0x7f020099;
+        public static final int speech_balloon=0x7f02009a;
+        public static final int stop=0x7f02009b;
+        public static final int sun=0x7f02009c;
+        public static final int trash_can=0x7f02009d;
+        public static final int unknown_cover=0x7f02009e;
+        public static final int user=0x7f02009f;
+        public static final int zoom=0x7f0200a0;
     }
     public static final class id {
+        public static final int about=0x7f08008f;
         public static final int abs__action_bar=0x7f080020;
         public static final int abs__action_bar_container=0x7f08001f;
         public static final int abs__action_bar_subtitle=0x7f080011;
@@ -853,7 +855,7 @@ containing a value of this type.
         public static final int abs__title=0x7f08001b;
         public static final int abs__up=0x7f08000f;
         public static final int addToLibraryButton=0x7f080058;
-        public static final int add_bookmark=0x7f08008f;
+        public static final int add_bookmark=0x7f080093;
         public static final int addedToLibrary=0x7f08004a;
         public static final int alphabetDivider=0x7f08006e;
         public static final int alphabetLabel=0x7f08003b;
@@ -899,6 +901,7 @@ containing a value of this type.
         public static final int fragment_file_browse=0x7f080038;
         public static final int fragment_library=0x7f080039;
         public static final int fragment_reading=0x7f08003a;
+        public static final int golibrary=0x7f080090;
         public static final int groupName=0x7f08005c;
         public static final int homeAsUp=0x7f080005;
         public static final int importDialogLayout=0x7f08007a;
@@ -910,6 +913,7 @@ containing a value of this type.
         public static final int itemTitle=0x7f080053;
         public static final int lastRead=0x7f080049;
         public static final int left_drawer=0x7f080035;
+        public static final int lessletter=0x7f080092;
         public static final int libHolder=0x7f08006b;
         public static final int libraryList=0x7f08006c;
         public static final int linearLayout1=0x7f08007d;
@@ -919,6 +923,7 @@ containing a value of this type.
         public static final int mediaPlayerLayout=0x7f080081;
         public static final int mediaProgress=0x7f080083;
         public static final int menu_search=0x7f08008e;
+        public static final int moreletterer=0x7f080091;
         public static final int myTitleBarLayout=0x7f080076;
         public static final int myTitleBarTextView=0x7f080077;
         public static final int nextButton=0x7f080087;
@@ -935,10 +940,10 @@ containing a value of this type.
         public static final int readNowButton=0x7f080057;
         public static final int readingProgress=0x7f08004f;
         public static final int rel=0x7f080070;
-        public static final int rolling_blind=0x7f080092;
+        public static final int rolling_blind=0x7f080096;
         public static final int scrollPane=0x7f08005f;
         public static final int search=0x7f08008a;
-        public static final int search_text=0x7f080090;
+        public static final int search_text=0x7f080094;
         public static final int secondDivider=0x7f08005a;
         public static final int selectBox=0x7f080068;
         public static final int shelves_view=0x7f08008b;
@@ -951,7 +956,7 @@ containing a value of this type.
         public static final int stopButton=0x7f080086;
         public static final int subtitleText=0x7f08005e;
         public static final int tabMode=0x7f080002;
-        public static final int text_to_speech=0x7f080091;
+        public static final int text_to_speech=0x7f080095;
         public static final int timeStamp=0x7f080089;
         public static final int titleField=0x7f080047;
         public static final int titleProgress=0x7f080079;
@@ -1062,246 +1067,248 @@ containing a value of this type.
         public static final int clear_note=0x7f0b0024;
         public static final int cloud_bm=0x7f0b0025;
         public static final int connection_fail=0x7f0b0026;
-        public static final int cops_server=0x7f0b0027;
-        public static final int copy_to_library=0x7f0b0028;
-        public static final int could_not_load=0x7f0b0029;
-        public static final int custom_site=0x7f0b002a;
-        public static final int custom_site_desc=0x7f0b002b;
-        public static final int dead_link=0x7f0b002c;
-        public static final int default_added_to_library=0x7f0b002d;
-        public static final int default_book_title=0x7f0b002e;
-        public static final int default_device_name_and_progress=0x7f0b002f;
-        public static final int default_filename=0x7f0b0030;
-        public static final int default_last_read=0x7f0b0031;
-        public static final int default_timestamp=0x7f0b0032;
-        public static final int delete=0x7f0b0033;
-        public static final int dictionary_lookup=0x7f0b0034;
-        public static final int download=0x7f0b0035;
-        public static final int download_complete=0x7f0b0036;
-        public static final int downloading=0x7f0b0037;
-        public static final int drawer_close=0x7f0b0038;
-        public static final int drawer_layout=0x7f0b0039;
-        public static final int drawer_open=0x7f0b003a;
-        public static final int ebook_path=0x7f0b003b;
-        public static final int edit=0x7f0b003c;
-        public static final int edit_site=0x7f0b003d;
-        public static final int empty_opds_feed=0x7f0b003e;
-        public static final int end_of_section=0x7f0b003f;
-        public static final int enter_email=0x7f0b0040;
-        public static final int enter_query=0x7f0b0041;
-        public static final int error_open_bk=0x7f0b0042;
-        public static final int feed_failed=0x7f0b0043;
-        public static final int folder_name=0x7f0b0044;
-        public static final int generic_server=0x7f0b0045;
-        public static final int google_lookup=0x7f0b0046;
-        public static final int hello_world=0x7f0b0047;
-        public static final int highlight=0x7f0b0048;
-        public static final int highlight_deleted=0x7f0b0049;
-        public static final int highlight_options=0x7f0b004a;
-        public static final int highlights=0x7f0b004b;
-        public static final int import_books=0x7f0b004c;
-        public static final int import_desc=0x7f0b004d;
-        public static final int import_errors=0x7f0b004e;
-        public static final int import_failed=0x7f0b004f;
-        public static final int import_this=0x7f0b0050;
-        public static final int importing=0x7f0b0051;
-        public static final int importing_books=0x7f0b0052;
-        public static final int init_tts=0x7f0b0053;
-        public static final int install_oi=0x7f0b0054;
-        public static final int language_switch_message=0x7f0b0055;
-        public static final int large_text=0x7f0b0056;
-        public static final int last_read=0x7f0b0057;
-        public static final int library=0x7f0b0058;
-        public static final int library_failed=0x7f0b0059;
-        public static final int list_view=0x7f0b005a;
-        public static final int loading_library=0x7f0b005b;
-        public static final int loading_text=0x7f0b005c;
-        public static final int loading_wait=0x7f0b005d;
-        public static final int lookup_wiktionary=0x7f0b005e;
-        public static final int manual_sync=0x7f0b005f;
-        public static final int msg_name_blank=0x7f0b0060;
-        public static final int msg_url_blank=0x7f0b0061;
-        public static final int never_read=0x7f0b0062;
-        public static final int next_page=0x7f0b0063;
-        public static final int no_author_byline=0x7f0b0064;
-        public static final int no_bks_fnd_text=0x7f0b0065;
-        public static final int no_bks_fnd_text2=0x7f0b0066;
-        public static final int no_books_found=0x7f0b0067;
-        public static final int no_custom_sites=0x7f0b0068;
-        public static final int no_new_books_found=0x7f0b0069;
-        public static final int no_search_results=0x7f0b006a;
-        public static final int no_such_folder=0x7f0b006b;
-        public static final int no_sync_points=0x7f0b006c;
-        public static final int notes_attached=0x7f0b006d;
-        public static final int now_reading=0x7f0b006e;
-        public static final int opds_settings=0x7f0b006f;
-        public static final int open_file=0x7f0b0070;
-        public static final int open_library=0x7f0b0071;
-        public static final int opening_file=0x7f0b0072;
-        public static final int out_of_memory=0x7f0b0073;
-        public static final int page_number_of=0x7f0b0074;
-        public static final int pref_accept_self_signed=0x7f0b0075;
-        public static final int pref_accept_self_signed_summary=0x7f0b0076;
-        public static final int pref_access_key=0x7f0b0077;
-        public static final int pref_access_key_message=0x7f0b0078;
-        public static final int pref_access_key_summary=0x7f0b0079;
-        public static final int pref_acra=0x7f0b007a;
-        public static final int pref_acra_summary=0x7f0b007b;
-        public static final int pref_allow_css_colours=0x7f0b007c;
-        public static final int pref_always_open_book=0x7f0b007d;
-        public static final int pref_always_open_book_summary=0x7f0b007e;
-        public static final int pref_animations=0x7f0b007f;
-        public static final int pref_autoscroll_settings=0x7f0b0080;
-        public static final int pref_calibre_password=0x7f0b0081;
-        public static final int pref_calibre_password_summary=0x7f0b0082;
-        public static final int pref_calibre_server=0x7f0b0083;
-        public static final int pref_calibre_server_hint=0x7f0b0084;
-        public static final int pref_calibre_server_message=0x7f0b0085;
-        public static final int pref_calibre_server_summary=0x7f0b0086;
-        public static final int pref_calibre_user=0x7f0b0087;
-        public static final int pref_calibre_user_hint=0x7f0b0088;
-        public static final int pref_calibre_user_summary=0x7f0b0089;
-        public static final int pref_colour_settings=0x7f0b008a;
-        public static final int pref_copy_to_library=0x7f0b008b;
-        public static final int pref_copy_to_library_summary=0x7f0b008c;
-        public static final int pref_css_colours_day_summary=0x7f0b008d;
-        public static final int pref_css_colours_night_summary=0x7f0b008e;
-        public static final int pref_day_bg=0x7f0b008f;
-        public static final int pref_day_bg_summary=0x7f0b0090;
-        public static final int pref_day_bright=0x7f0b0091;
-        public static final int pref_day_bright_summary=0x7f0b0092;
-        public static final int pref_day_link=0x7f0b0093;
-        public static final int pref_day_link_summary=0x7f0b0094;
-        public static final int pref_day_night=0x7f0b0095;
-        public static final int pref_day_night_summary=0x7f0b0096;
-        public static final int pref_day_text=0x7f0b0097;
-        public static final int pref_day_text_summary=0x7f0b0098;
-        public static final int pref_dev_settings=0x7f0b0099;
-        public static final int pref_device_name=0x7f0b009a;
-        public static final int pref_device_name_message=0x7f0b009b;
-        public static final int pref_device_name_summary=0x7f0b009c;
-        public static final int pref_dim_system_ui=0x7f0b009d;
-        public static final int pref_dim_system_ui_summary=0x7f0b009e;
-        public static final int pref_email=0x7f0b009f;
-        public static final int pref_email_message=0x7f0b00a0;
-        public static final int pref_email_summary=0x7f0b00a1;
-        public static final int pref_font_face=0x7f0b00a2;
-        public static final int pref_font_face_summary=0x7f0b00a3;
-        public static final int pref_full_screen=0x7f0b00a4;
-        public static final int pref_full_screen_summary=0x7f0b00a5;
-        public static final int pref_h_animation=0x7f0b00a6;
-        public static final int pref_h_animation_summary=0x7f0b00a7;
-        public static final int pref_itext_size=0x7f0b00a8;
-        public static final int pref_itext_size_summary=0x7f0b00a9;
-        public static final int pref_keep_screen_on=0x7f0b00aa;
-        public static final int pref_keep_screen_on_summary=0x7f0b00ab;
-        public static final int pref_key=0x7f0b00ac;
-        public static final int pref_lang=0x7f0b00ad;
-        public static final int pref_lang_summary=0x7f0b00ae;
-        public static final int pref_line_spacing=0x7f0b00af;
-        public static final int pref_line_spacing_summary=0x7f0b00b0;
-        public static final int pref_long_short=0x7f0b00b1;
-        public static final int pref_long_short_summary=0x7f0b00b2;
-        public static final int pref_manage_sites=0x7f0b00b3;
-        public static final int pref_manage_sites_summary=0x7f0b00b4;
-        public static final int pref_margin_h=0x7f0b00b5;
-        public static final int pref_margin_h_summary=0x7f0b00b6;
-        public static final int pref_margin_v=0x7f0b00b7;
-        public static final int pref_margin_v_summary=0x7f0b00b8;
-        public static final int pref_my_books_settings=0x7f0b00b9;
-        public static final int pref_nav_swipe_h=0x7f0b00ba;
-        public static final int pref_nav_swipe_h_summary=0x7f0b00bb;
-        public static final int pref_nav_swipe_v=0x7f0b00bc;
-        public static final int pref_nav_swipe_v_summary=0x7f0b00bd;
-        public static final int pref_nav_tap_h=0x7f0b00be;
-        public static final int pref_nav_tap_h_summary=0x7f0b00bf;
-        public static final int pref_nav_tap_v=0x7f0b00c0;
-        public static final int pref_nav_tap_v_summary=0x7f0b00c1;
-        public static final int pref_nav_vol=0x7f0b00c2;
-        public static final int pref_nav_vol_summary=0x7f0b00c3;
-        public static final int pref_navigation_settings=0x7f0b00c4;
-        public static final int pref_night_bg=0x7f0b00c5;
-        public static final int pref_night_bg_summary=0x7f0b00c6;
-        public static final int pref_night_link=0x7f0b00c7;
-        public static final int pref_night_link_summary=0x7f0b00c8;
-        public static final int pref_night_text=0x7f0b00c9;
-        public static final int pref_night_text_summary=0x7f0b00ca;
-        public static final int pref_nook_touch=0x7f0b00cb;
-        public static final int pref_nook_touch_button_nav=0x7f0b00cc;
-        public static final int pref_nook_touch_button_nav_summary=0x7f0b00cd;
-        public static final int pref_reading_direction=0x7f0b00ce;
-        public static final int pref_reading_direction_summary=0x7f0b00cf;
-        public static final int pref_sans_serif_font=0x7f0b00d0;
-        public static final int pref_sans_serif_summary=0x7f0b00d1;
-        public static final int pref_screen_orientation=0x7f0b00d2;
-        public static final int pref_screen_orientation_summary=0x7f0b00d3;
-        public static final int pref_scroll_speed=0x7f0b00d4;
-        public static final int pref_scroll_speed_summary=0x7f0b00d5;
-        public static final int pref_scroll_style=0x7f0b00d6;
-        public static final int pref_scroll_style_summary=0x7f0b00d7;
-        public static final int pref_scrolling=0x7f0b00d8;
-        public static final int pref_scrolling_summary=0x7f0b00d9;
-        public static final int pref_serif_font=0x7f0b00da;
-        public static final int pref_serif_summary=0x7f0b00db;
-        public static final int pref_set_brightness=0x7f0b00dc;
-        public static final int pref_set_brightness_summary=0x7f0b00dd;
-        public static final int pref_show_pagenum=0x7f0b00de;
-        public static final int pref_show_pagenum_summary=0x7f0b00df;
-        public static final int pref_strip_whitespace=0x7f0b00e0;
-        public static final int pref_strip_whitespace_summary=0x7f0b00e1;
-        public static final int pref_sync_server=0x7f0b00e2;
-        public static final int pref_sync_server_message=0x7f0b00e3;
-        public static final int pref_sync_server_summary=0x7f0b00e4;
-        public static final int pref_sync_settings=0x7f0b00e5;
-        public static final int pref_text_display_settings=0x7f0b00e6;
-        public static final int pref_use_publisher_style=0x7f0b00e7;
-        public static final int pref_use_publisher_style_summary=0x7f0b00e8;
-        public static final int pref_v_animation=0x7f0b00e9;
-        public static final int pref_v_animation_summary=0x7f0b00ea;
-        public static final int pref_visual_settings=0x7f0b00eb;
-        public static final int prefs=0x7f0b00ec;
-        public static final int prev_page=0x7f0b00ed;
-        public static final int profile_day=0x7f0b00ee;
-        public static final int profile_night=0x7f0b00ef;
-        public static final int read=0x7f0b00f0;
-        public static final int rolling_blind=0x7f0b00f1;
-        public static final int save=0x7f0b00f2;
-        public static final int save_note=0x7f0b00f3;
-        public static final int scan_bks_question=0x7f0b00f4;
-        public static final int scan_books=0x7f0b00f5;
-        public static final int scan_folder=0x7f0b00f6;
-        public static final int scan_folders=0x7f0b00f7;
-        public static final int scan_whole_card=0x7f0b00f8;
-        public static final int scanning_epub=0x7f0b00f9;
-        public static final int search_books=0x7f0b00fa;
-        public static final int search_cancelled=0x7f0b00fb;
-        public static final int search_hits=0x7f0b00fc;
-        public static final int search_library=0x7f0b00fd;
-        public static final int search_no_matches=0x7f0b00fe;
-        public static final int search_results=0x7f0b00ff;
-        public static final int search_results_item=0x7f0b0100;
-        public static final int search_text=0x7f0b0101;
-        public static final int search_wait=0x7f0b0102;
-        public static final int set_colour=0x7f0b0103;
-        public static final int shelves_view=0x7f0b0104;
-        public static final int show_toc=0x7f0b0105;
-        public static final int site_desc=0x7f0b0106;
-        public static final int site_name=0x7f0b0107;
-        public static final int site_password=0x7f0b0108;
-        public static final int site_url=0x7f0b0109;
-        public static final int site_username=0x7f0b010a;
-        public static final int small_text=0x7f0b010b;
-        public static final int sync_failed=0x7f0b010c;
-        public static final int syncing=0x7f0b010d;
-        public static final int text_note=0x7f0b010e;
-        public static final int text_to_speech=0x7f0b010f;
-        public static final int title=0x7f0b0110;
-        public static final int toc_label=0x7f0b0111;
-        public static final int tts_failed=0x7f0b0112;
-        public static final int view_details=0x7f0b0113;
-        public static final int wikipedia_lookup=0x7f0b0114;
-        public static final int word_select=0x7f0b0115;
-        public static final int zero_percent=0x7f0b0116;
+        public static final int contact=0x7f0b0027;
+        public static final int cops_server=0x7f0b0028;
+        public static final int copy_to_library=0x7f0b0029;
+        public static final int could_not_load=0x7f0b002a;
+        public static final int custom_site=0x7f0b002b;
+        public static final int custom_site_desc=0x7f0b002c;
+        public static final int dead_link=0x7f0b002d;
+        public static final int default_added_to_library=0x7f0b002e;
+        public static final int default_book_title=0x7f0b002f;
+        public static final int default_device_name_and_progress=0x7f0b0030;
+        public static final int default_filename=0x7f0b0031;
+        public static final int default_last_read=0x7f0b0032;
+        public static final int default_timestamp=0x7f0b0033;
+        public static final int delete=0x7f0b0034;
+        public static final int dictionary_lookup=0x7f0b0035;
+        public static final int download=0x7f0b0036;
+        public static final int download_complete=0x7f0b0037;
+        public static final int downloading=0x7f0b0038;
+        public static final int drawer_close=0x7f0b0039;
+        public static final int drawer_layout=0x7f0b003a;
+        public static final int drawer_open=0x7f0b003b;
+        public static final int ebook_path=0x7f0b003c;
+        public static final int edit=0x7f0b003d;
+        public static final int edit_site=0x7f0b003e;
+        public static final int empty_opds_feed=0x7f0b003f;
+        public static final int end_of_section=0x7f0b0040;
+        public static final int enter_email=0x7f0b0041;
+        public static final int enter_query=0x7f0b0042;
+        public static final int error_open_bk=0x7f0b0043;
+        public static final int feed_failed=0x7f0b0044;
+        public static final int folder_name=0x7f0b0045;
+        public static final int generic_server=0x7f0b0046;
+        public static final int golibrary=0x7f0b0047;
+        public static final int google_lookup=0x7f0b0048;
+        public static final int hello_world=0x7f0b0049;
+        public static final int highlight=0x7f0b004a;
+        public static final int highlight_deleted=0x7f0b004b;
+        public static final int highlight_options=0x7f0b004c;
+        public static final int highlights=0x7f0b004d;
+        public static final int import_books=0x7f0b004e;
+        public static final int import_desc=0x7f0b004f;
+        public static final int import_errors=0x7f0b0050;
+        public static final int import_failed=0x7f0b0051;
+        public static final int import_this=0x7f0b0052;
+        public static final int importing=0x7f0b0053;
+        public static final int importing_books=0x7f0b0054;
+        public static final int init_tts=0x7f0b0055;
+        public static final int install_oi=0x7f0b0056;
+        public static final int language_switch_message=0x7f0b0057;
+        public static final int large_text=0x7f0b0058;
+        public static final int last_read=0x7f0b0059;
+        public static final int library=0x7f0b005a;
+        public static final int library_failed=0x7f0b005b;
+        public static final int list_view=0x7f0b005c;
+        public static final int loading_library=0x7f0b005d;
+        public static final int loading_text=0x7f0b005e;
+        public static final int loading_wait=0x7f0b005f;
+        public static final int lookup_wiktionary=0x7f0b0060;
+        public static final int manual_sync=0x7f0b0061;
+        public static final int msg_name_blank=0x7f0b0062;
+        public static final int msg_url_blank=0x7f0b0063;
+        public static final int never_read=0x7f0b0064;
+        public static final int next_page=0x7f0b0065;
+        public static final int no_author_byline=0x7f0b0066;
+        public static final int no_bks_fnd_text=0x7f0b0067;
+        public static final int no_bks_fnd_text2=0x7f0b0068;
+        public static final int no_books_found=0x7f0b0069;
+        public static final int no_custom_sites=0x7f0b006a;
+        public static final int no_new_books_found=0x7f0b006b;
+        public static final int no_search_results=0x7f0b006c;
+        public static final int no_such_folder=0x7f0b006d;
+        public static final int no_sync_points=0x7f0b006e;
+        public static final int notes_attached=0x7f0b006f;
+        public static final int now_reading=0x7f0b0070;
+        public static final int opds_settings=0x7f0b0071;
+        public static final int open_file=0x7f0b0072;
+        public static final int open_library=0x7f0b0073;
+        public static final int opening_file=0x7f0b0074;
+        public static final int out_of_memory=0x7f0b0075;
+        public static final int page_number_of=0x7f0b0076;
+        public static final int pref_accept_self_signed=0x7f0b0077;
+        public static final int pref_accept_self_signed_summary=0x7f0b0078;
+        public static final int pref_access_key=0x7f0b0079;
+        public static final int pref_access_key_message=0x7f0b007a;
+        public static final int pref_access_key_summary=0x7f0b007b;
+        public static final int pref_acra=0x7f0b007c;
+        public static final int pref_acra_summary=0x7f0b007d;
+        public static final int pref_allow_css_colours=0x7f0b007e;
+        public static final int pref_always_open_book=0x7f0b007f;
+        public static final int pref_always_open_book_summary=0x7f0b0080;
+        public static final int pref_animations=0x7f0b0081;
+        public static final int pref_autoscroll_settings=0x7f0b0082;
+        public static final int pref_calibre_password=0x7f0b0083;
+        public static final int pref_calibre_password_summary=0x7f0b0084;
+        public static final int pref_calibre_server=0x7f0b0085;
+        public static final int pref_calibre_server_hint=0x7f0b0086;
+        public static final int pref_calibre_server_message=0x7f0b0087;
+        public static final int pref_calibre_server_summary=0x7f0b0088;
+        public static final int pref_calibre_user=0x7f0b0089;
+        public static final int pref_calibre_user_hint=0x7f0b008a;
+        public static final int pref_calibre_user_summary=0x7f0b008b;
+        public static final int pref_colour_settings=0x7f0b008c;
+        public static final int pref_copy_to_library=0x7f0b008d;
+        public static final int pref_copy_to_library_summary=0x7f0b008e;
+        public static final int pref_css_colours_day_summary=0x7f0b008f;
+        public static final int pref_css_colours_night_summary=0x7f0b0090;
+        public static final int pref_day_bg=0x7f0b0091;
+        public static final int pref_day_bg_summary=0x7f0b0092;
+        public static final int pref_day_bright=0x7f0b0093;
+        public static final int pref_day_bright_summary=0x7f0b0094;
+        public static final int pref_day_link=0x7f0b0095;
+        public static final int pref_day_link_summary=0x7f0b0096;
+        public static final int pref_day_night=0x7f0b0097;
+        public static final int pref_day_night_summary=0x7f0b0098;
+        public static final int pref_day_text=0x7f0b0099;
+        public static final int pref_day_text_summary=0x7f0b009a;
+        public static final int pref_dev_settings=0x7f0b009b;
+        public static final int pref_device_name=0x7f0b009c;
+        public static final int pref_device_name_message=0x7f0b009d;
+        public static final int pref_device_name_summary=0x7f0b009e;
+        public static final int pref_dim_system_ui=0x7f0b009f;
+        public static final int pref_dim_system_ui_summary=0x7f0b00a0;
+        public static final int pref_email=0x7f0b00a1;
+        public static final int pref_email_message=0x7f0b00a2;
+        public static final int pref_email_summary=0x7f0b00a3;
+        public static final int pref_font_face=0x7f0b00a4;
+        public static final int pref_font_face_summary=0x7f0b00a5;
+        public static final int pref_full_screen=0x7f0b00a6;
+        public static final int pref_full_screen_summary=0x7f0b00a7;
+        public static final int pref_h_animation=0x7f0b00a8;
+        public static final int pref_h_animation_summary=0x7f0b00a9;
+        public static final int pref_itext_size=0x7f0b00aa;
+        public static final int pref_itext_size_summary=0x7f0b00ab;
+        public static final int pref_keep_screen_on=0x7f0b00ac;
+        public static final int pref_keep_screen_on_summary=0x7f0b00ad;
+        public static final int pref_key=0x7f0b00ae;
+        public static final int pref_lang=0x7f0b00af;
+        public static final int pref_lang_summary=0x7f0b00b0;
+        public static final int pref_line_spacing=0x7f0b00b1;
+        public static final int pref_line_spacing_summary=0x7f0b00b2;
+        public static final int pref_long_short=0x7f0b00b3;
+        public static final int pref_long_short_summary=0x7f0b00b4;
+        public static final int pref_manage_sites=0x7f0b00b5;
+        public static final int pref_manage_sites_summary=0x7f0b00b6;
+        public static final int pref_margin_h=0x7f0b00b7;
+        public static final int pref_margin_h_summary=0x7f0b00b8;
+        public static final int pref_margin_v=0x7f0b00b9;
+        public static final int pref_margin_v_summary=0x7f0b00ba;
+        public static final int pref_my_books_settings=0x7f0b00bb;
+        public static final int pref_nav_swipe_h=0x7f0b00bc;
+        public static final int pref_nav_swipe_h_summary=0x7f0b00bd;
+        public static final int pref_nav_swipe_v=0x7f0b00be;
+        public static final int pref_nav_swipe_v_summary=0x7f0b00bf;
+        public static final int pref_nav_tap_h=0x7f0b00c0;
+        public static final int pref_nav_tap_h_summary=0x7f0b00c1;
+        public static final int pref_nav_tap_v=0x7f0b00c2;
+        public static final int pref_nav_tap_v_summary=0x7f0b00c3;
+        public static final int pref_nav_vol=0x7f0b00c4;
+        public static final int pref_nav_vol_summary=0x7f0b00c5;
+        public static final int pref_navigation_settings=0x7f0b00c6;
+        public static final int pref_night_bg=0x7f0b00c7;
+        public static final int pref_night_bg_summary=0x7f0b00c8;
+        public static final int pref_night_link=0x7f0b00c9;
+        public static final int pref_night_link_summary=0x7f0b00ca;
+        public static final int pref_night_text=0x7f0b00cb;
+        public static final int pref_night_text_summary=0x7f0b00cc;
+        public static final int pref_nook_touch=0x7f0b00cd;
+        public static final int pref_nook_touch_button_nav=0x7f0b00ce;
+        public static final int pref_nook_touch_button_nav_summary=0x7f0b00cf;
+        public static final int pref_reading_direction=0x7f0b00d0;
+        public static final int pref_reading_direction_summary=0x7f0b00d1;
+        public static final int pref_sans_serif_font=0x7f0b00d2;
+        public static final int pref_sans_serif_summary=0x7f0b00d3;
+        public static final int pref_screen_orientation=0x7f0b00d4;
+        public static final int pref_screen_orientation_summary=0x7f0b00d5;
+        public static final int pref_scroll_speed=0x7f0b00d6;
+        public static final int pref_scroll_speed_summary=0x7f0b00d7;
+        public static final int pref_scroll_style=0x7f0b00d8;
+        public static final int pref_scroll_style_summary=0x7f0b00d9;
+        public static final int pref_scrolling=0x7f0b00da;
+        public static final int pref_scrolling_summary=0x7f0b00db;
+        public static final int pref_serif_font=0x7f0b00dc;
+        public static final int pref_serif_summary=0x7f0b00dd;
+        public static final int pref_set_brightness=0x7f0b00de;
+        public static final int pref_set_brightness_summary=0x7f0b00df;
+        public static final int pref_show_pagenum=0x7f0b00e0;
+        public static final int pref_show_pagenum_summary=0x7f0b00e1;
+        public static final int pref_strip_whitespace=0x7f0b00e2;
+        public static final int pref_strip_whitespace_summary=0x7f0b00e3;
+        public static final int pref_sync_server=0x7f0b00e4;
+        public static final int pref_sync_server_message=0x7f0b00e5;
+        public static final int pref_sync_server_summary=0x7f0b00e6;
+        public static final int pref_sync_settings=0x7f0b00e7;
+        public static final int pref_text_display_settings=0x7f0b00e8;
+        public static final int pref_use_publisher_style=0x7f0b00e9;
+        public static final int pref_use_publisher_style_summary=0x7f0b00ea;
+        public static final int pref_v_animation=0x7f0b00eb;
+        public static final int pref_v_animation_summary=0x7f0b00ec;
+        public static final int pref_visual_settings=0x7f0b00ed;
+        public static final int prefs=0x7f0b00ee;
+        public static final int prev_page=0x7f0b00ef;
+        public static final int profile_day=0x7f0b00f0;
+        public static final int profile_night=0x7f0b00f1;
+        public static final int read=0x7f0b00f2;
+        public static final int rolling_blind=0x7f0b00f3;
+        public static final int save=0x7f0b00f4;
+        public static final int save_note=0x7f0b00f5;
+        public static final int scan_bks_question=0x7f0b00f6;
+        public static final int scan_books=0x7f0b00f7;
+        public static final int scan_folder=0x7f0b00f8;
+        public static final int scan_folders=0x7f0b00f9;
+        public static final int scan_whole_card=0x7f0b00fa;
+        public static final int scanning_epub=0x7f0b00fb;
+        public static final int search_books=0x7f0b00fc;
+        public static final int search_cancelled=0x7f0b00fd;
+        public static final int search_hits=0x7f0b00fe;
+        public static final int search_library=0x7f0b00ff;
+        public static final int search_no_matches=0x7f0b0100;
+        public static final int search_results=0x7f0b0101;
+        public static final int search_results_item=0x7f0b0102;
+        public static final int search_text=0x7f0b0103;
+        public static final int search_wait=0x7f0b0104;
+        public static final int set_colour=0x7f0b0105;
+        public static final int shelves_view=0x7f0b0106;
+        public static final int show_toc=0x7f0b0107;
+        public static final int site_desc=0x7f0b0108;
+        public static final int site_name=0x7f0b0109;
+        public static final int site_password=0x7f0b010a;
+        public static final int site_url=0x7f0b010b;
+        public static final int site_username=0x7f0b010c;
+        public static final int small_text=0x7f0b010d;
+        public static final int sync_failed=0x7f0b010e;
+        public static final int syncing=0x7f0b010f;
+        public static final int text_note=0x7f0b0110;
+        public static final int text_to_speech=0x7f0b0111;
+        public static final int title=0x7f0b0112;
+        public static final int toc_label=0x7f0b0113;
+        public static final int tts_failed=0x7f0b0114;
+        public static final int view_details=0x7f0b0115;
+        public static final int wikipedia_lookup=0x7f0b0116;
+        public static final int word_select=0x7f0b0117;
+        public static final int zero_percent=0x7f0b0118;
     }
     public static final class style {
         /** 
@@ -1420,25 +1427,25 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockActionBar_background net.nightwhistler.pageturner:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_backgroundSplit net.nightwhistler.pageturner:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_backgroundStacked net.nightwhistler.pageturner:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_customNavigationLayout net.nightwhistler.pageturner:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_displayOptions net.nightwhistler.pageturner:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_divider net.nightwhistler.pageturner:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_height net.nightwhistler.pageturner:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_homeLayout net.nightwhistler.pageturner:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_icon net.nightwhistler.pageturner:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_indeterminateProgressStyle net.nightwhistler.pageturner:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_itemPadding net.nightwhistler.pageturner:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_logo net.nightwhistler.pageturner:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_navigationMode net.nightwhistler.pageturner:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_progressBarPadding net.nightwhistler.pageturner:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_progressBarStyle net.nightwhistler.pageturner:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_subtitle net.nightwhistler.pageturner:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_subtitleTextStyle net.nightwhistler.pageturner:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_title net.nightwhistler.pageturner:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionBar_titleTextStyle net.nightwhistler.pageturner:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_background net.nightwhistler.pageturner.test:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_backgroundSplit net.nightwhistler.pageturner.test:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_backgroundStacked net.nightwhistler.pageturner.test:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_customNavigationLayout net.nightwhistler.pageturner.test:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_displayOptions net.nightwhistler.pageturner.test:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_divider net.nightwhistler.pageturner.test:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_height net.nightwhistler.pageturner.test:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_homeLayout net.nightwhistler.pageturner.test:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_icon net.nightwhistler.pageturner.test:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_indeterminateProgressStyle net.nightwhistler.pageturner.test:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_itemPadding net.nightwhistler.pageturner.test:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_logo net.nightwhistler.pageturner.test:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_navigationMode net.nightwhistler.pageturner.test:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_progressBarPadding net.nightwhistler.pageturner.test:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_progressBarStyle net.nightwhistler.pageturner.test:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_subtitle net.nightwhistler.pageturner.test:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_subtitleTextStyle net.nightwhistler.pageturner.test:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_title net.nightwhistler.pageturner.test:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionBar_titleTextStyle net.nightwhistler.pageturner.test:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #SherlockActionBar_background
            @see #SherlockActionBar_backgroundSplit
@@ -1468,7 +1475,7 @@ containing a value of this type.
             0x7f010010, 0x7f010011, 0x7f010012
         };
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#background}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#background}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
@@ -1476,11 +1483,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name net.nightwhistler.pageturner:background
+          @attr name net.nightwhistler.pageturner.test:background
         */
         public static final int SherlockActionBar_background = 0;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
@@ -1488,11 +1495,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name net.nightwhistler.pageturner:backgroundSplit
+          @attr name net.nightwhistler.pageturner.test:backgroundSplit
         */
         public static final int SherlockActionBar_backgroundSplit = 1;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
@@ -1500,21 +1507,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name net.nightwhistler.pageturner:backgroundStacked
+          @attr name net.nightwhistler.pageturner.test:backgroundStacked
         */
         public static final int SherlockActionBar_backgroundStacked = 12;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:customNavigationLayout
+          @attr name net.nightwhistler.pageturner.test:customNavigationLayout
         */
         public static final int SherlockActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#displayOptions}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
@@ -1531,21 +1538,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name net.nightwhistler.pageturner:displayOptions
+          @attr name net.nightwhistler.pageturner.test:displayOptions
         */
         public static final int SherlockActionBar_displayOptions = 7;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#divider}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#divider}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:divider
+          @attr name net.nightwhistler.pageturner.test:divider
         */
         public static final int SherlockActionBar_divider = 2;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#height}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#height}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
@@ -1557,41 +1564,41 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:height
+          @attr name net.nightwhistler.pageturner.test:height
         */
         public static final int SherlockActionBar_height = 3;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#homeLayout}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:homeLayout
+          @attr name net.nightwhistler.pageturner.test:homeLayout
         */
         public static final int SherlockActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#icon}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#icon}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:icon
+          @attr name net.nightwhistler.pageturner.test:icon
         */
         public static final int SherlockActionBar_icon = 10;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:indeterminateProgressStyle
+          @attr name net.nightwhistler.pageturner.test:indeterminateProgressStyle
         */
         public static final int SherlockActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#itemPadding}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
@@ -1603,21 +1610,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:itemPadding
+          @attr name net.nightwhistler.pageturner.test:itemPadding
         */
         public static final int SherlockActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#logo}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#logo}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:logo
+          @attr name net.nightwhistler.pageturner.test:logo
         */
         public static final int SherlockActionBar_logo = 11;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#navigationMode}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
@@ -1631,11 +1638,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name net.nightwhistler.pageturner:navigationMode
+          @attr name net.nightwhistler.pageturner.test:navigationMode
         */
         public static final int SherlockActionBar_navigationMode = 6;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
@@ -1647,21 +1654,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:progressBarPadding
+          @attr name net.nightwhistler.pageturner.test:progressBarPadding
         */
         public static final int SherlockActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:progressBarStyle
+          @attr name net.nightwhistler.pageturner.test:progressBarStyle
         */
         public static final int SherlockActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#subtitle}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
@@ -1671,21 +1678,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:subtitle
+          @attr name net.nightwhistler.pageturner.test:subtitle
         */
         public static final int SherlockActionBar_subtitle = 9;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:subtitleTextStyle
+          @attr name net.nightwhistler.pageturner.test:subtitleTextStyle
         */
         public static final int SherlockActionBar_subtitleTextStyle = 4;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#title}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#title}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
@@ -1695,17 +1702,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:title
+          @attr name net.nightwhistler.pageturner.test:title
         */
         public static final int SherlockActionBar_title = 8;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #SherlockActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:titleTextStyle
+          @attr name net.nightwhistler.pageturner.test:titleTextStyle
         */
         public static final int SherlockActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a SherlockActionMenuItemView.
@@ -1733,11 +1740,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockActionMode_background net.nightwhistler.pageturner:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionMode_backgroundSplit net.nightwhistler.pageturner:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionMode_height net.nightwhistler.pageturner:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionMode_subtitleTextStyle net.nightwhistler.pageturner:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActionMode_titleTextStyle net.nightwhistler.pageturner:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionMode_background net.nightwhistler.pageturner.test:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionMode_backgroundSplit net.nightwhistler.pageturner.test:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionMode_height net.nightwhistler.pageturner.test:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionMode_subtitleTextStyle net.nightwhistler.pageturner.test:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionMode_titleTextStyle net.nightwhistler.pageturner.test:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #SherlockActionMode_background
            @see #SherlockActionMode_backgroundSplit
@@ -1750,7 +1757,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010005
         };
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#background}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#background}
           attribute's value can be found in the {@link #SherlockActionMode} array.
 
 
@@ -1758,11 +1765,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name net.nightwhistler.pageturner:background
+          @attr name net.nightwhistler.pageturner.test:background
         */
         public static final int SherlockActionMode_background = 0;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #SherlockActionMode} array.
 
 
@@ -1770,11 +1777,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name net.nightwhistler.pageturner:backgroundSplit
+          @attr name net.nightwhistler.pageturner.test:backgroundSplit
         */
         public static final int SherlockActionMode_backgroundSplit = 1;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#height}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#height}
           attribute's value can be found in the {@link #SherlockActionMode} array.
 
 
@@ -1786,27 +1793,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:height
+          @attr name net.nightwhistler.pageturner.test:height
         */
         public static final int SherlockActionMode_height = 2;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #SherlockActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:subtitleTextStyle
+          @attr name net.nightwhistler.pageturner.test:subtitleTextStyle
         */
         public static final int SherlockActionMode_subtitleTextStyle = 3;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #SherlockActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:titleTextStyle
+          @attr name net.nightwhistler.pageturner.test:titleTextStyle
         */
         public static final int SherlockActionMode_titleTextStyle = 4;
         /** Attributes that can be used with a SherlockActivityChooserView.
@@ -1816,8 +1823,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SherlockActivityChooserView_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActivityChooserView_expandActivityOverflowButtonDrawable net.nightwhistler.pageturner:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockActivityChooserView_initialActivityCount net.nightwhistler.pageturner:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActivityChooserView_expandActivityOverflowButtonDrawable net.nightwhistler.pageturner.test:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActivityChooserView_initialActivityCount net.nightwhistler.pageturner.test:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #SherlockActivityChooserView_android_background
            @see #SherlockActivityChooserView_expandActivityOverflowButtonDrawable
@@ -1833,17 +1840,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockActivityChooserView_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #SherlockActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:expandActivityOverflowButtonDrawable
+          @attr name net.nightwhistler.pageturner.test:expandActivityOverflowButtonDrawable
         */
         public static final int SherlockActivityChooserView_expandActivityOverflowButtonDrawable = 2;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #SherlockActivityChooserView} array.
 
 
@@ -1853,7 +1860,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:initialActivityCount
+          @attr name net.nightwhistler.pageturner.test:initialActivityCount
         */
         public static final int SherlockActivityChooserView_initialActivityCount = 1;
         /** Attributes that can be used with a SherlockMenuGroup.
@@ -2073,14 +2080,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockMenuView_headerBackground net.nightwhistler.pageturner:headerBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockMenuView_horizontalDivider net.nightwhistler.pageturner:horizontalDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockMenuView_itemBackground net.nightwhistler.pageturner:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockMenuView_itemIconDisabledAlpha net.nightwhistler.pageturner:itemIconDisabledAlpha}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockMenuView_itemTextAppearance net.nightwhistler.pageturner:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockMenuView_preserveIconSpacing net.nightwhistler.pageturner:preserveIconSpacing}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockMenuView_verticalDivider net.nightwhistler.pageturner:verticalDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockMenuView_windowAnimationStyle net.nightwhistler.pageturner:windowAnimationStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockMenuView_headerBackground net.nightwhistler.pageturner.test:headerBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockMenuView_horizontalDivider net.nightwhistler.pageturner.test:horizontalDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockMenuView_itemBackground net.nightwhistler.pageturner.test:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockMenuView_itemIconDisabledAlpha net.nightwhistler.pageturner.test:itemIconDisabledAlpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockMenuView_itemTextAppearance net.nightwhistler.pageturner.test:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockMenuView_preserveIconSpacing net.nightwhistler.pageturner.test:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockMenuView_verticalDivider net.nightwhistler.pageturner.test:verticalDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockMenuView_windowAnimationStyle net.nightwhistler.pageturner.test:windowAnimationStyle}</code></td><td></td></tr>
            </table>
            @see #SherlockMenuView_headerBackground
            @see #SherlockMenuView_horizontalDivider
@@ -2096,7 +2103,7 @@ containing a value of this type.
             0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c
         };
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#headerBackground}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#headerBackground}
           attribute's value can be found in the {@link #SherlockMenuView} array.
 
 
@@ -2104,21 +2111,21 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name net.nightwhistler.pageturner:headerBackground
+          @attr name net.nightwhistler.pageturner.test:headerBackground
         */
         public static final int SherlockMenuView_headerBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#horizontalDivider}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#horizontalDivider}
           attribute's value can be found in the {@link #SherlockMenuView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:horizontalDivider
+          @attr name net.nightwhistler.pageturner.test:horizontalDivider
         */
         public static final int SherlockMenuView_horizontalDivider = 1;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#itemBackground}
           attribute's value can be found in the {@link #SherlockMenuView} array.
 
 
@@ -2126,11 +2133,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name net.nightwhistler.pageturner:itemBackground
+          @attr name net.nightwhistler.pageturner.test:itemBackground
         */
         public static final int SherlockMenuView_itemBackground = 4;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#itemIconDisabledAlpha}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#itemIconDisabledAlpha}
           attribute's value can be found in the {@link #SherlockMenuView} array.
 
 
@@ -2140,21 +2147,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:itemIconDisabledAlpha
+          @attr name net.nightwhistler.pageturner.test:itemIconDisabledAlpha
         */
         public static final int SherlockMenuView_itemIconDisabledAlpha = 6;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #SherlockMenuView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:itemTextAppearance
+          @attr name net.nightwhistler.pageturner.test:itemTextAppearance
         */
         public static final int SherlockMenuView_itemTextAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #SherlockMenuView} array.
 
 
@@ -2164,27 +2171,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:preserveIconSpacing
+          @attr name net.nightwhistler.pageturner.test:preserveIconSpacing
         */
         public static final int SherlockMenuView_preserveIconSpacing = 7;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#verticalDivider}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#verticalDivider}
           attribute's value can be found in the {@link #SherlockMenuView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:verticalDivider
+          @attr name net.nightwhistler.pageturner.test:verticalDivider
         */
         public static final int SherlockMenuView_verticalDivider = 2;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#windowAnimationStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#windowAnimationStyle}
           attribute's value can be found in the {@link #SherlockMenuView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:windowAnimationStyle
+          @attr name net.nightwhistler.pageturner.test:windowAnimationStyle
         */
         public static final int SherlockMenuView_windowAnimationStyle = 5;
         /** Attributes that can be used with a SherlockSearchView.
@@ -2196,8 +2203,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SherlockSearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SherlockSearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SherlockSearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockSearchView_iconifiedByDefault net.nightwhistler.pageturner:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockSearchView_queryHint net.nightwhistler.pageturner:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockSearchView_iconifiedByDefault net.nightwhistler.pageturner.test:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockSearchView_queryHint net.nightwhistler.pageturner.test:queryHint}</code></td><td></td></tr>
            </table>
            @see #SherlockSearchView_android_imeOptions
            @see #SherlockSearchView_android_inputType
@@ -2228,7 +2235,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockSearchView_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SherlockSearchView} array.
 
 
@@ -2238,11 +2245,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:iconifiedByDefault
+          @attr name net.nightwhistler.pageturner.test:iconifiedByDefault
         */
         public static final int SherlockSearchView_iconifiedByDefault = 3;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#queryHint}
           attribute's value can be found in the {@link #SherlockSearchView} array.
 
 
@@ -2252,7 +2259,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:queryHint
+          @attr name net.nightwhistler.pageturner.test:queryHint
         */
         public static final int SherlockSearchView_queryHint = 4;
         /** Attributes that can be used with a SherlockSpinner.
@@ -2337,73 +2344,73 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarDivider net.nightwhistler.pageturner:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarItemBackground net.nightwhistler.pageturner:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarSize net.nightwhistler.pageturner:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarSplitStyle net.nightwhistler.pageturner:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarStyle net.nightwhistler.pageturner:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarTabBarStyle net.nightwhistler.pageturner:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarTabStyle net.nightwhistler.pageturner:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarTabTextStyle net.nightwhistler.pageturner:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarWidgetTheme net.nightwhistler.pageturner:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionButtonStyle net.nightwhistler.pageturner:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionDropDownStyle net.nightwhistler.pageturner:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionMenuTextAppearance net.nightwhistler.pageturner:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionMenuTextColor net.nightwhistler.pageturner:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModeBackground net.nightwhistler.pageturner:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModeCloseButtonStyle net.nightwhistler.pageturner:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModeCloseDrawable net.nightwhistler.pageturner:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModePopupWindowStyle net.nightwhistler.pageturner:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModeShareDrawable net.nightwhistler.pageturner:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModeSplitBackground net.nightwhistler.pageturner:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModeStyle net.nightwhistler.pageturner:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionOverflowButtonStyle net.nightwhistler.pageturner:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionSpinnerItemStyle net.nightwhistler.pageturner:actionSpinnerItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_activatedBackgroundIndicator net.nightwhistler.pageturner:activatedBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_activityChooserViewStyle net.nightwhistler.pageturner:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_buttonStyleSmall net.nightwhistler.pageturner:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_dividerVertical net.nightwhistler.pageturner:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_dropDownHintAppearance net.nightwhistler.pageturner:dropDownHintAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_dropDownListViewStyle net.nightwhistler.pageturner:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_dropdownListPreferredItemHeight net.nightwhistler.pageturner:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_homeAsUpIndicator net.nightwhistler.pageturner:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_listPopupWindowStyle net.nightwhistler.pageturner:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_listPreferredItemHeightSmall net.nightwhistler.pageturner:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_listPreferredItemPaddingLeft net.nightwhistler.pageturner:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_listPreferredItemPaddingRight net.nightwhistler.pageturner:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_popupMenuStyle net.nightwhistler.pageturner:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_searchAutoCompleteTextView net.nightwhistler.pageturner:searchAutoCompleteTextView}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_searchDropdownBackground net.nightwhistler.pageturner:searchDropdownBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_searchResultListItemHeight net.nightwhistler.pageturner:searchResultListItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_searchViewCloseIcon net.nightwhistler.pageturner:searchViewCloseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_searchViewEditQuery net.nightwhistler.pageturner:searchViewEditQuery}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_searchViewEditQueryBackground net.nightwhistler.pageturner:searchViewEditQueryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_searchViewGoIcon net.nightwhistler.pageturner:searchViewGoIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_searchViewSearchIcon net.nightwhistler.pageturner:searchViewSearchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_searchViewTextField net.nightwhistler.pageturner:searchViewTextField}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_searchViewTextFieldRight net.nightwhistler.pageturner:searchViewTextFieldRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_searchViewVoiceIcon net.nightwhistler.pageturner:searchViewVoiceIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_selectableItemBackground net.nightwhistler.pageturner:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_spinnerDropDownItemStyle net.nightwhistler.pageturner:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_spinnerItemStyle net.nightwhistler.pageturner:spinnerItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textAppearanceLargePopupMenu net.nightwhistler.pageturner:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textAppearanceListItemSmall net.nightwhistler.pageturner:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textAppearanceSearchResultSubtitle net.nightwhistler.pageturner:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textAppearanceSearchResultTitle net.nightwhistler.pageturner:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textAppearanceSmall net.nightwhistler.pageturner:textAppearanceSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textAppearanceSmallPopupMenu net.nightwhistler.pageturner:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textColorPrimary net.nightwhistler.pageturner:textColorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textColorPrimaryDisableOnly net.nightwhistler.pageturner:textColorPrimaryDisableOnly}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textColorPrimaryInverse net.nightwhistler.pageturner:textColorPrimaryInverse}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textColorSearchUrl net.nightwhistler.pageturner:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowActionBar net.nightwhistler.pageturner:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowActionBarOverlay net.nightwhistler.pageturner:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowActionModeOverlay net.nightwhistler.pageturner:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowContentOverlay net.nightwhistler.pageturner:windowContentOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowMinWidthMajor net.nightwhistler.pageturner:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowMinWidthMinor net.nightwhistler.pageturner:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowNoTitle net.nightwhistler.pageturner:windowNoTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowSplitActionBar net.nightwhistler.pageturner:windowSplitActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarDivider net.nightwhistler.pageturner.test:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarItemBackground net.nightwhistler.pageturner.test:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarSize net.nightwhistler.pageturner.test:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarSplitStyle net.nightwhistler.pageturner.test:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarStyle net.nightwhistler.pageturner.test:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabBarStyle net.nightwhistler.pageturner.test:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabStyle net.nightwhistler.pageturner.test:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabTextStyle net.nightwhistler.pageturner.test:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarWidgetTheme net.nightwhistler.pageturner.test:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionButtonStyle net.nightwhistler.pageturner.test:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionDropDownStyle net.nightwhistler.pageturner.test:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionMenuTextAppearance net.nightwhistler.pageturner.test:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionMenuTextColor net.nightwhistler.pageturner.test:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeBackground net.nightwhistler.pageturner.test:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeCloseButtonStyle net.nightwhistler.pageturner.test:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeCloseDrawable net.nightwhistler.pageturner.test:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModePopupWindowStyle net.nightwhistler.pageturner.test:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeShareDrawable net.nightwhistler.pageturner.test:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeSplitBackground net.nightwhistler.pageturner.test:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeStyle net.nightwhistler.pageturner.test:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionOverflowButtonStyle net.nightwhistler.pageturner.test:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionSpinnerItemStyle net.nightwhistler.pageturner.test:actionSpinnerItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_activatedBackgroundIndicator net.nightwhistler.pageturner.test:activatedBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_activityChooserViewStyle net.nightwhistler.pageturner.test:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_buttonStyleSmall net.nightwhistler.pageturner.test:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_dividerVertical net.nightwhistler.pageturner.test:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_dropDownHintAppearance net.nightwhistler.pageturner.test:dropDownHintAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_dropDownListViewStyle net.nightwhistler.pageturner.test:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_dropdownListPreferredItemHeight net.nightwhistler.pageturner.test:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_homeAsUpIndicator net.nightwhistler.pageturner.test:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_listPopupWindowStyle net.nightwhistler.pageturner.test:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_listPreferredItemHeightSmall net.nightwhistler.pageturner.test:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_listPreferredItemPaddingLeft net.nightwhistler.pageturner.test:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_listPreferredItemPaddingRight net.nightwhistler.pageturner.test:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_popupMenuStyle net.nightwhistler.pageturner.test:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchAutoCompleteTextView net.nightwhistler.pageturner.test:searchAutoCompleteTextView}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchDropdownBackground net.nightwhistler.pageturner.test:searchDropdownBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchResultListItemHeight net.nightwhistler.pageturner.test:searchResultListItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewCloseIcon net.nightwhistler.pageturner.test:searchViewCloseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewEditQuery net.nightwhistler.pageturner.test:searchViewEditQuery}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewEditQueryBackground net.nightwhistler.pageturner.test:searchViewEditQueryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewGoIcon net.nightwhistler.pageturner.test:searchViewGoIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewSearchIcon net.nightwhistler.pageturner.test:searchViewSearchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewTextField net.nightwhistler.pageturner.test:searchViewTextField}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewTextFieldRight net.nightwhistler.pageturner.test:searchViewTextFieldRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewVoiceIcon net.nightwhistler.pageturner.test:searchViewVoiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_selectableItemBackground net.nightwhistler.pageturner.test:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_spinnerDropDownItemStyle net.nightwhistler.pageturner.test:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_spinnerItemStyle net.nightwhistler.pageturner.test:spinnerItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceLargePopupMenu net.nightwhistler.pageturner.test:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceListItemSmall net.nightwhistler.pageturner.test:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceSearchResultSubtitle net.nightwhistler.pageturner.test:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceSearchResultTitle net.nightwhistler.pageturner.test:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceSmall net.nightwhistler.pageturner.test:textAppearanceSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceSmallPopupMenu net.nightwhistler.pageturner.test:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textColorPrimary net.nightwhistler.pageturner.test:textColorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textColorPrimaryDisableOnly net.nightwhistler.pageturner.test:textColorPrimaryDisableOnly}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textColorPrimaryInverse net.nightwhistler.pageturner.test:textColorPrimaryInverse}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textColorSearchUrl net.nightwhistler.pageturner.test:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionBar net.nightwhistler.pageturner.test:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionBarOverlay net.nightwhistler.pageturner.test:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionModeOverlay net.nightwhistler.pageturner.test:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowContentOverlay net.nightwhistler.pageturner.test:windowContentOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowMinWidthMajor net.nightwhistler.pageturner.test:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowMinWidthMinor net.nightwhistler.pageturner.test:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowNoTitle net.nightwhistler.pageturner.test:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowSplitActionBar net.nightwhistler.pageturner.test:windowSplitActionBar}</code></td><td></td></tr>
            </table>
            @see #SherlockTheme_actionBarDivider
            @see #SherlockTheme_actionBarItemBackground
@@ -2493,27 +2500,27 @@ containing a value of this type.
             0x7f01005f, 0x7f010060, 0x7f010061
         };
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionBarDivider
+          @attr name net.nightwhistler.pageturner.test:actionBarDivider
         */
         public static final int SherlockTheme_actionBarDivider = 8;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionBarItemBackground
+          @attr name net.nightwhistler.pageturner.test:actionBarItemBackground
         */
         public static final int SherlockTheme_actionBarItemBackground = 9;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionBarSize}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2533,101 +2540,101 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name net.nightwhistler.pageturner:actionBarSize
+          @attr name net.nightwhistler.pageturner.test:actionBarSize
         */
         public static final int SherlockTheme_actionBarSize = 7;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionBarSplitStyle
+          @attr name net.nightwhistler.pageturner.test:actionBarSplitStyle
         */
         public static final int SherlockTheme_actionBarSplitStyle = 5;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionBarStyle
+          @attr name net.nightwhistler.pageturner.test:actionBarStyle
         */
         public static final int SherlockTheme_actionBarStyle = 4;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionBarTabBarStyle
+          @attr name net.nightwhistler.pageturner.test:actionBarTabBarStyle
         */
         public static final int SherlockTheme_actionBarTabBarStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionBarTabStyle
+          @attr name net.nightwhistler.pageturner.test:actionBarTabStyle
         */
         public static final int SherlockTheme_actionBarTabStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionBarTabTextStyle
+          @attr name net.nightwhistler.pageturner.test:actionBarTabTextStyle
         */
         public static final int SherlockTheme_actionBarTabTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionBarWidgetTheme
+          @attr name net.nightwhistler.pageturner.test:actionBarWidgetTheme
         */
         public static final int SherlockTheme_actionBarWidgetTheme = 6;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionButtonStyle
+          @attr name net.nightwhistler.pageturner.test:actionButtonStyle
         */
         public static final int SherlockTheme_actionButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionDropDownStyle
+          @attr name net.nightwhistler.pageturner.test:actionDropDownStyle
         */
         public static final int SherlockTheme_actionDropDownStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionMenuTextAppearance
+          @attr name net.nightwhistler.pageturner.test:actionMenuTextAppearance
         */
         public static final int SherlockTheme_actionMenuTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2635,161 +2642,161 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name net.nightwhistler.pageturner:actionMenuTextColor
+          @attr name net.nightwhistler.pageturner.test:actionMenuTextColor
         */
         public static final int SherlockTheme_actionMenuTextColor = 11;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionModeBackground
+          @attr name net.nightwhistler.pageturner.test:actionModeBackground
         */
         public static final int SherlockTheme_actionModeBackground = 14;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionModeCloseButtonStyle
+          @attr name net.nightwhistler.pageturner.test:actionModeCloseButtonStyle
         */
         public static final int SherlockTheme_actionModeCloseButtonStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionModeCloseDrawable
+          @attr name net.nightwhistler.pageturner.test:actionModeCloseDrawable
         */
         public static final int SherlockTheme_actionModeCloseDrawable = 16;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionModePopupWindowStyle
+          @attr name net.nightwhistler.pageturner.test:actionModePopupWindowStyle
         */
         public static final int SherlockTheme_actionModePopupWindowStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionModeShareDrawable
+          @attr name net.nightwhistler.pageturner.test:actionModeShareDrawable
         */
         public static final int SherlockTheme_actionModeShareDrawable = 17;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionModeSplitBackground
+          @attr name net.nightwhistler.pageturner.test:actionModeSplitBackground
         */
         public static final int SherlockTheme_actionModeSplitBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionModeStyle
+          @attr name net.nightwhistler.pageturner.test:actionModeStyle
         */
         public static final int SherlockTheme_actionModeStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionOverflowButtonStyle
+          @attr name net.nightwhistler.pageturner.test:actionOverflowButtonStyle
         */
         public static final int SherlockTheme_actionOverflowButtonStyle = 3;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#actionSpinnerItemStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#actionSpinnerItemStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:actionSpinnerItemStyle
+          @attr name net.nightwhistler.pageturner.test:actionSpinnerItemStyle
         */
         public static final int SherlockTheme_actionSpinnerItemStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#activatedBackgroundIndicator}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#activatedBackgroundIndicator}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:activatedBackgroundIndicator
+          @attr name net.nightwhistler.pageturner.test:activatedBackgroundIndicator
         */
         public static final int SherlockTheme_activatedBackgroundIndicator = 65;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:activityChooserViewStyle
+          @attr name net.nightwhistler.pageturner.test:activityChooserViewStyle
         */
         public static final int SherlockTheme_activityChooserViewStyle = 64;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:buttonStyleSmall
+          @attr name net.nightwhistler.pageturner.test:buttonStyleSmall
         */
         public static final int SherlockTheme_buttonStyleSmall = 19;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#dividerVertical}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:dividerVertical
+          @attr name net.nightwhistler.pageturner.test:dividerVertical
         */
         public static final int SherlockTheme_dividerVertical = 50;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#dropDownHintAppearance}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#dropDownHintAppearance}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:dropDownHintAppearance
+          @attr name net.nightwhistler.pageturner.test:dropDownHintAppearance
         */
         public static final int SherlockTheme_dropDownHintAppearance = 66;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:dropDownListViewStyle
+          @attr name net.nightwhistler.pageturner.test:dropDownListViewStyle
         */
         public static final int SherlockTheme_dropDownListViewStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2801,31 +2808,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:dropdownListPreferredItemHeight
+          @attr name net.nightwhistler.pageturner.test:dropdownListPreferredItemHeight
         */
         public static final int SherlockTheme_dropdownListPreferredItemHeight = 56;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:homeAsUpIndicator
+          @attr name net.nightwhistler.pageturner.test:homeAsUpIndicator
         */
         public static final int SherlockTheme_homeAsUpIndicator = 53;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:listPopupWindowStyle
+          @attr name net.nightwhistler.pageturner.test:listPopupWindowStyle
         */
         public static final int SherlockTheme_listPopupWindowStyle = 63;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2837,11 +2844,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:listPreferredItemHeightSmall
+          @attr name net.nightwhistler.pageturner.test:listPreferredItemHeightSmall
         */
         public static final int SherlockTheme_listPreferredItemHeightSmall = 44;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2853,11 +2860,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:listPreferredItemPaddingLeft
+          @attr name net.nightwhistler.pageturner.test:listPreferredItemPaddingLeft
         */
         public static final int SherlockTheme_listPreferredItemPaddingLeft = 45;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2869,41 +2876,41 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:listPreferredItemPaddingRight
+          @attr name net.nightwhistler.pageturner.test:listPreferredItemPaddingRight
         */
         public static final int SherlockTheme_listPreferredItemPaddingRight = 46;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:popupMenuStyle
+          @attr name net.nightwhistler.pageturner.test:popupMenuStyle
         */
         public static final int SherlockTheme_popupMenuStyle = 55;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#searchAutoCompleteTextView}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#searchAutoCompleteTextView}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:searchAutoCompleteTextView
+          @attr name net.nightwhistler.pageturner.test:searchAutoCompleteTextView
         */
         public static final int SherlockTheme_searchAutoCompleteTextView = 30;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#searchDropdownBackground}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#searchDropdownBackground}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:searchDropdownBackground
+          @attr name net.nightwhistler.pageturner.test:searchDropdownBackground
         */
         public static final int SherlockTheme_searchDropdownBackground = 31;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#searchResultListItemHeight}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#searchResultListItemHeight}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2915,181 +2922,181 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:searchResultListItemHeight
+          @attr name net.nightwhistler.pageturner.test:searchResultListItemHeight
         */
         public static final int SherlockTheme_searchResultListItemHeight = 41;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#searchViewCloseIcon}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#searchViewCloseIcon}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:searchViewCloseIcon
+          @attr name net.nightwhistler.pageturner.test:searchViewCloseIcon
         */
         public static final int SherlockTheme_searchViewCloseIcon = 32;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#searchViewEditQuery}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#searchViewEditQuery}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:searchViewEditQuery
+          @attr name net.nightwhistler.pageturner.test:searchViewEditQuery
         */
         public static final int SherlockTheme_searchViewEditQuery = 36;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#searchViewEditQueryBackground}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#searchViewEditQueryBackground}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:searchViewEditQueryBackground
+          @attr name net.nightwhistler.pageturner.test:searchViewEditQueryBackground
         */
         public static final int SherlockTheme_searchViewEditQueryBackground = 37;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#searchViewGoIcon}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#searchViewGoIcon}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:searchViewGoIcon
+          @attr name net.nightwhistler.pageturner.test:searchViewGoIcon
         */
         public static final int SherlockTheme_searchViewGoIcon = 33;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#searchViewSearchIcon}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#searchViewSearchIcon}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:searchViewSearchIcon
+          @attr name net.nightwhistler.pageturner.test:searchViewSearchIcon
         */
         public static final int SherlockTheme_searchViewSearchIcon = 34;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#searchViewTextField}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#searchViewTextField}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:searchViewTextField
+          @attr name net.nightwhistler.pageturner.test:searchViewTextField
         */
         public static final int SherlockTheme_searchViewTextField = 38;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#searchViewTextFieldRight}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#searchViewTextFieldRight}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:searchViewTextFieldRight
+          @attr name net.nightwhistler.pageturner.test:searchViewTextFieldRight
         */
         public static final int SherlockTheme_searchViewTextFieldRight = 39;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#searchViewVoiceIcon}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#searchViewVoiceIcon}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:searchViewVoiceIcon
+          @attr name net.nightwhistler.pageturner.test:searchViewVoiceIcon
         */
         public static final int SherlockTheme_searchViewVoiceIcon = 35;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:selectableItemBackground
+          @attr name net.nightwhistler.pageturner.test:selectableItemBackground
         */
         public static final int SherlockTheme_selectableItemBackground = 20;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:spinnerDropDownItemStyle
+          @attr name net.nightwhistler.pageturner.test:spinnerDropDownItemStyle
         */
         public static final int SherlockTheme_spinnerDropDownItemStyle = 29;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#spinnerItemStyle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#spinnerItemStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:spinnerItemStyle
+          @attr name net.nightwhistler.pageturner.test:spinnerItemStyle
         */
         public static final int SherlockTheme_spinnerItemStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:textAppearanceLargePopupMenu
+          @attr name net.nightwhistler.pageturner.test:textAppearanceLargePopupMenu
         */
         public static final int SherlockTheme_textAppearanceLargePopupMenu = 22;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:textAppearanceListItemSmall
+          @attr name net.nightwhistler.pageturner.test:textAppearanceListItemSmall
         */
         public static final int SherlockTheme_textAppearanceListItemSmall = 47;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:textAppearanceSearchResultSubtitle
+          @attr name net.nightwhistler.pageturner.test:textAppearanceSearchResultSubtitle
         */
         public static final int SherlockTheme_textAppearanceSearchResultSubtitle = 43;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:textAppearanceSearchResultTitle
+          @attr name net.nightwhistler.pageturner.test:textAppearanceSearchResultTitle
         */
         public static final int SherlockTheme_textAppearanceSearchResultTitle = 42;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#textAppearanceSmall}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#textAppearanceSmall}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:textAppearanceSmall
+          @attr name net.nightwhistler.pageturner.test:textAppearanceSmall
         */
         public static final int SherlockTheme_textAppearanceSmall = 24;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:textAppearanceSmallPopupMenu
+          @attr name net.nightwhistler.pageturner.test:textAppearanceSmallPopupMenu
         */
         public static final int SherlockTheme_textAppearanceSmallPopupMenu = 23;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#textColorPrimary}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#textColorPrimary}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -3100,11 +3107,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:textColorPrimary
+          @attr name net.nightwhistler.pageturner.test:textColorPrimary
         */
         public static final int SherlockTheme_textColorPrimary = 25;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#textColorPrimaryDisableOnly}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#textColorPrimaryDisableOnly}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -3115,11 +3122,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:textColorPrimaryDisableOnly
+          @attr name net.nightwhistler.pageturner.test:textColorPrimaryDisableOnly
         */
         public static final int SherlockTheme_textColorPrimaryDisableOnly = 26;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#textColorPrimaryInverse}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#textColorPrimaryInverse}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -3130,11 +3137,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:textColorPrimaryInverse
+          @attr name net.nightwhistler.pageturner.test:textColorPrimaryInverse
         */
         public static final int SherlockTheme_textColorPrimaryInverse = 27;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -3142,11 +3149,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name net.nightwhistler.pageturner:textColorSearchUrl
+          @attr name net.nightwhistler.pageturner.test:textColorSearchUrl
         */
         public static final int SherlockTheme_textColorSearchUrl = 40;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#windowActionBar}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -3156,11 +3163,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:windowActionBar
+          @attr name net.nightwhistler.pageturner.test:windowActionBar
         */
         public static final int SherlockTheme_windowActionBar = 59;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -3170,11 +3177,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:windowActionBarOverlay
+          @attr name net.nightwhistler.pageturner.test:windowActionBarOverlay
         */
         public static final int SherlockTheme_windowActionBarOverlay = 60;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -3184,21 +3191,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:windowActionModeOverlay
+          @attr name net.nightwhistler.pageturner.test:windowActionModeOverlay
         */
         public static final int SherlockTheme_windowActionModeOverlay = 61;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#windowContentOverlay}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#windowContentOverlay}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name net.nightwhistler.pageturner:windowContentOverlay
+          @attr name net.nightwhistler.pageturner.test:windowContentOverlay
         */
         public static final int SherlockTheme_windowContentOverlay = 21;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -3210,11 +3217,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:windowMinWidthMajor
+          @attr name net.nightwhistler.pageturner.test:windowMinWidthMajor
         */
         public static final int SherlockTheme_windowMinWidthMajor = 48;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -3226,11 +3233,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:windowMinWidthMinor
+          @attr name net.nightwhistler.pageturner.test:windowMinWidthMinor
         */
         public static final int SherlockTheme_windowMinWidthMinor = 49;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -3240,11 +3247,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:windowNoTitle
+          @attr name net.nightwhistler.pageturner.test:windowNoTitle
         */
         public static final int SherlockTheme_windowNoTitle = 58;
         /**
-          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.R.attr#windowSplitActionBar}
+          <p>This symbol is the offset where the {@link net.nightwhistler.pageturner.test.R.attr#windowSplitActionBar}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -3254,7 +3261,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.nightwhistler.pageturner:windowSplitActionBar
+          @attr name net.nightwhistler.pageturner.test:windowSplitActionBar
         */
         public static final int SherlockTheme_windowSplitActionBar = 62;
         /** Attributes that can be used with a SherlockView.

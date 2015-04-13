@@ -14,8 +14,6 @@
     
     <string name="show_toc">عرض محتوى الجدول</string>   
     <string name="rolling_blind">التصفح الآلي</string>
-    <string name="about">عن البرنامج</string>
-    <string name="about_gpl">PageTurner برنامج مجاني تحت ترخيص GPL v3</string>
     <string name="error_open_bk">خلل في فتح الكتاب: %s</string>
     
     <string name="dictionary_lookup">بحث في القاموس</string>

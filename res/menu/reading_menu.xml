@@ -7,6 +7,20 @@
           android:icon="@drawable/cloud_refresh"
           android:showAsAction="ifRoom" />
 -->
+    <item android:id="@+id/golibrary"
+        android:title="@string/golibrary"
+        android:icon="@drawable/file"
+        android:showAsAction="ifRoom" />
+
+    <item android:id="@+id/moreletterer"
+        android:title="@string/golibrary"
+        android:icon="@drawable/add"
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/lessletter"
+        android:title="@string/golibrary"
+        android:icon="@drawable/less"
+        android:showAsAction="ifRoom" />
+
     <item android:id="@+id/add_bookmark"
           android:title="@string/add_bookmark"
           android:icon="@drawable/bookmark_add"
@@ -47,9 +61,9 @@
     <item android:id="@+id/rolling_blind"
           android:title="@string/rolling_blind"
           android:icon="@drawable/play" />
-<!--
+
     <item android:id="@+id/about"          
           android:title="@string/about"
           android:icon="@drawable/info" />  
-             -->
+
 </menu>

@@ -4,7 +4,7 @@
 
     <string name="open_file">Abrir archivo ePub</string>
     <string name="open_library">Mis Libros</string>
-
+    <string name="golibrary">Mis Libros</string>
     <string name="profile_day">Cambia a modo día</string>  
     <string name="profile_night">Cambia a modo noche</string>
     <string name="manual_sync">Sincronize sus progresos</string>
@@ -12,8 +12,8 @@
 
     <string name="show_toc">Muestra Índice</string>   
     <string name="rolling_blind">Auto-scroll</string>
-    <string name="about">Acerca de PageTurner</string>
-    <string name="about_gpl">PageTurner es software libre bajo la GPL v3.</string>
+    <string name="contact">Contacto</string>
+    <string name="about">Acerca de Ebook Patagonia</string>
     <string name="error_open_bk">Error abriendo el libro: %s</string>
 
     <string name="dictionary_lookup">Buscar en el diccionario</string>

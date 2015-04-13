@@ -1141,6 +1141,24 @@ public class ReadingFragment extends RoboSherlockFragment implements
         }
 	}
 
+    private void goLibraryActivity() {
+
+        onStop();
+
+        //Clear any cached text.
+        textLoader.closeCurrentBook();
+        Intent intent = new Intent(context, LibraryActivity.class);
+        intent.setData(Uri.parse(this.fileName));
+        startActivity(intent);
+        this.libraryService.close();
+
+        Activity activity = getActivity();
+
+        if ( activity != null ) {
+            activity.finish();
+        }
+    }
+
 	public void onWindowFocusChanged(boolean hasFocus) {
 		if (hasFocus) {
             hideTitleBar();
@@ -2339,9 +2357,15 @@ public class ReadingFragment extends RoboSherlockFragment implements
 			return true;
 
 		case R.id.profile_day:
-			config.setColourProfile(ColourProfile.DAY);
-			this.restartActivity();
-			return true;
+                config.setColourProfile(ColourProfile.DAY);
+                this.restartActivity();
+                return true;
+
+        case R.id.golibrary:
+              //  config.setColourProfile(ColourProfile.DAY);
+                this.goLibraryActivity();
+
+                return true;
 
 	//	case R.id.manual_sync:
 	//		if (config.isSyncEnabled()) {

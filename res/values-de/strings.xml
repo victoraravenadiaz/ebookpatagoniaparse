@@ -14,8 +14,6 @@
     
     <string name="show_toc">Inhaltsverzeichnis anzeigen</string>   
     <string name="rolling_blind">Automatischer Seitenwechsel</string>
-    <string name="about">Über PageTurner</string>
-    <string name="about_gpl">PageTurner ist freie Software unter der GPL v3.</string>
     <string name="error_open_bk">Fehler beim Öffnen des Buchs: %s</string>
     
     <string name="dictionary_lookup">In Wörterbuch nachschlagen</string>

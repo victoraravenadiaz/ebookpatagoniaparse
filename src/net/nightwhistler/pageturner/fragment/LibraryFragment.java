@@ -460,8 +460,8 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
         String detalleLibro = "";
         try {
             InputStream in = am.open("meta.json");
-            String json = TextUtil.btoString(in);
-
+            //String json = TextUtil.btoString(in);
+            String json = TextUtil.convertStreamToString(in);
             if( in != null )
             {
                 try{
@@ -599,7 +599,7 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
         //onMenuPress( menu, R.id.list_view ).thenDo( toggleListener );
         //OCULTAR BOTOM AGREGAR ARCHIVO
         //onMenuPress( menu, R.id.scan_books ).thenDo( this::showImportDialog );
-        //onMenuPress( menu, R.id.about ).thenDo( dialogFactory.buildAboutDialog()::show );
+        onMenuPress( menu, R.id.about ).thenDo( dialogFactory.buildAboutDialog()::show );
 
         onMenuPress( menu, R.id.profile_day ).thenDo(() -> switchToColourProfile(ColourProfile.DAY) );
         onMenuPress( menu, R.id.profile_night ).thenDo(() -> switchToColourProfile(ColourProfile.NIGHT) );

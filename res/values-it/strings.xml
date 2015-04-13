@@ -14,8 +14,6 @@
     
     <string name="show_toc">Mostra indice</string>   
     <string name="rolling_blind">Scorrimento automatico</string>
-    <string name="about">Info su PageTurner</string>
-    <string name="about_gpl">PageTurner è software libero sotto licenza GPLv3.</string>
     <string name="error_open_bk">Errore nell\'apertura del libro: %s</string>
     
     <string name="dictionary_lookup">Cerca nel dizionario</string>

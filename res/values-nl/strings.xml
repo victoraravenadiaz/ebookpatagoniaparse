@@ -14,8 +14,6 @@
     
     <string name="show_toc">Inhoudsopgave</string>   
     <string name="rolling_blind">Auto-scroll</string>
-    <string name="about">Over PageTurner</string>
-    <string name="about_gpl">PageTurner is vrije software onder de GPL v3.</string>
     <string name="error_open_bk">Fout bij het openen van het boek: %s</string>
     
     <string name="dictionary_lookup">Opzoeken in woordenboek</string>

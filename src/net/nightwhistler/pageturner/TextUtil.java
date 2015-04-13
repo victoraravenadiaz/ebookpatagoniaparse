@@ -73,6 +73,25 @@ public class TextUtil {
         }
         return false;
     }
+
+    /**
+     *
+     * @param is
+     * @return
+     * @throws IOException
+     */
+    public static  String convertStreamToString(InputStream is)
+            throws IOException
+    {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        int i = is.read();
+        while (i != -1)
+        {
+            baos.write(i);
+            i = is.read();
+        }
+        return baos.toString();
+    }
     /** Convierte bytes en texto
      * @param inputStream de tipo InputStream
      * */
