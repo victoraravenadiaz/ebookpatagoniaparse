@@ -40,13 +40,16 @@
     <item android:id="@+id/menu_search"
           android:icon="@drawable/zoom"
           android:title="@string/search_library"
-          android:orderInCategory="0"
+          android:orderInCategory="1"
           android:actionViewClass="com.actionbarsherlock.widget.SearchView"
           android:showAsAction="ifRoom|collapseActionView" />
 
     <item
         android:id="@+id/about"
         android:icon="@drawable/info"
-        android:title="@string/about"/>
+        android:orderInCategory="0"
+        android:title="@string/about"
+        android:showAsAction="ifRoom"
+        />
 
 </menu>

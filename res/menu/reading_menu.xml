@@ -12,7 +12,7 @@
         android:icon="@drawable/file"
         android:showAsAction="ifRoom" />
 
-    <item android:id="@+id/moreletterer"
+    <item android:id="@+id/moreletter"
         android:title="@string/golibrary"
         android:icon="@drawable/add"
         android:showAsAction="ifRoom" />
@@ -62,8 +62,8 @@
           android:title="@string/rolling_blind"
           android:icon="@drawable/play" />
 
-    <item android:id="@+id/about"          
+   <!-- <item android:id="@+id/about"
           android:title="@string/about"
-          android:icon="@drawable/info" />  
+          android:icon="@drawable/info" /> -->
 
 </menu>

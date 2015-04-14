@@ -73,8 +73,8 @@ public abstract class PageTurnerActivity extends RoboSherlockFragmentActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
 
         initDrawerItems( mDrawerOptions );
-
-        mToggle = new ActionBarDrawerToggleCompat(this, mDrawer, R.drawable.ic_drawer, R.string.drawer_open, R.string.drawer_close) {
+        //SE INVOCA EL MENU
+        mToggle = new ActionBarDrawerToggleCompat(this, mDrawer, R.drawable.list, R.string.drawer_open, R.string.drawer_close) {
             public void onDrawerClosed(View view) {
                 PageTurnerActivity.this.onDrawerClosed(view);
             }

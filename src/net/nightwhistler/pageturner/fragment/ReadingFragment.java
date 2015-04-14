@@ -1141,6 +1141,7 @@ public class ReadingFragment extends RoboSherlockFragment implements
         }
 	}
 
+
     private void goLibraryActivity() {
 
         onStop();
@@ -2365,6 +2366,21 @@ public class ReadingFragment extends RoboSherlockFragment implements
               //  config.setColourProfile(ColourProfile.DAY);
                 this.goLibraryActivity();
 
+                return true;
+
+         case R.id.lessletter:
+                //  config.setColourProfile(ColourProfile.DAY);
+             if(config.getTextSize()-4>0) {
+                   config.setTextSize(config.getTextSize()-4);
+                  this.restartActivity();
+             }
+             return true;
+          case R.id.moreletter:
+                //  config.setColourProfile(ColourProfile.DAY);
+                if(config.getTextSize()+4<50) {
+                    config.setTextSize(config.getTextSize()+4);
+                    this.restartActivity();
+                }
                 return true;
 
 	//	case R.id.manual_sync:
