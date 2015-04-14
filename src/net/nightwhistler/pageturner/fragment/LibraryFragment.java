@@ -278,41 +278,9 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
                         }
 
                         writeToFile(in, ""+folder.getAbsolutePath() +"/"+files[i]);
-                        /*
-                        FileChannel origen = null;
-                        FileChannel destino = null;
-                        try {
-                            origen = (FileChannel) newChannel(in);
-                            destino = new FileOutputStream(outFile).getChannel();
+                       
 
-                            long count = 0;
-                            long size = origen.size();
-                            while((count += destino.transferFrom(origen, count, size-count))<size);
-                        }
-                        finally {
-                            if(origen != null) {
-                                origen.close();
-                            }
-                            if(destino != null) {
-                                destino.close();
-                            }
-                        }
-                        */
 
-                        //File outFile = new File(""+config.getLibraryFolder()
-                         //       +"/"+files[i]);
-                        /*
-                        LOG.debug("Copiando fichero "+ outFile.getAbsolutePath());
-                        OutputStream out = new FileOutputStream(outFile);
-
-                        byte[] buffer = new byte[1024];
-                        int read;
-                        while((read = in.read(buffer)) != -1){
-                            out.write(buffer, 0, read);
-                        }
-                        in.close();
-                        out.flush();
-                        out.close();*/
                         LOG.debug(" Name => "+files[i] + " => Tamaño    "+outFile.length());
                         LOG.debug(" Name => "+files[i] + " => Es un fichero    "+outFile.isFile());
                         LOG.debug(" Name => "+files[i] + " => Se puede leer    "+outFile.canRead());

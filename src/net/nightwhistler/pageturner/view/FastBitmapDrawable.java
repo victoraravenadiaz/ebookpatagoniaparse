@@ -19,10 +19,13 @@ package net.nightwhistler.pageturner.view;
 import android.graphics.*;
 import android.graphics.drawable.Drawable;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class FastBitmapDrawable extends Drawable {
     
 	private Bitmap mBitmap;
-	
+    private static final Logger LOG = LoggerFactory.getLogger("FastBitmapDrawable");
 	private int width;
 	private int height;
 
@@ -32,6 +35,11 @@ public class FastBitmapDrawable extends Drawable {
         if ( b != null ) {
             this.width = b.getWidth();
             this.height = b.getHeight();
+
+            LOG.debug("TAMANIO " +  this.width +  " " +  this.height );
+            this.width = 480;
+            this.height = 720;
+
         }
     }
 
