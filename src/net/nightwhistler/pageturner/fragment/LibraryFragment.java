@@ -401,17 +401,18 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 		return true;
 	}
 
+
 	private Option<Drawable> getCover( LibraryBook book ) {
 
         try {
             //if ( !coverCache.containsKey(book.getFileName() ) ) {
-
+            /*
             LOG.debug("=> RUTA IMAGEN COVER "+book.getFileName());
             String[] id =book.getFileName().split("/");
             int valor = id.length -1 ;
             LOG.debug("==>ID ruta fichero COVER " + id[valor]);
-            String imagen= id[valor].replace(".epub","");
-
+            String imagen= id[valor].replace(".epub","");*/
+            String imagen = book.getIdBook();
             String rutaImagen = (""+config.getLibraryFolder()).replace("Some: ","") +"/"+imagen+".jpg";
             //Drawable draw = coverCache.get(book.getFileName());
             LOG.debug("==>ID ruta fichero ruta imagen COVER" + rutaImagen);
@@ -1021,19 +1022,21 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
     }
 
     private void loadCover( ImageView imageView, LibraryBook book, int index ) {
+        /*
         LOG.debug("=> RUTA IMAGEN "+book.getFileName());
         String[] id =book.getFileName().split("/");
         int valor = id.length -1 ;
         LOG.debug("==>ID ruta fichero " + id[valor]);
         String imagen= id[valor].replace(".epub","");
-
+        */
+        String imagen = book.getIdBook();
         String rutaImagen = (""+config.getLibraryFolder()).replace("Some: ","") +"/"+imagen+".jpg";
 		//Drawable draw = coverCache.get(book.getFileName());
-        LOG.debug("==>ID ruta fichero ruta imagen" + rutaImagen);
+      //  LOG.debug("==>ID ruta fichero ruta imagen" + rutaImagen);
         Drawable draw = coverCache.get(rutaImagen);
 		
 		if ( draw != null ) {
-            LOG.debug("==>ID ruta fichero ruta imagen LO HIZO" + rutaImagen);
+           LOG.debug("==>ID ruta fichero ruta imagen LO HIZO" + rutaImagen);
 
 			imageView.setImageDrawable(draw);
 		} else {
@@ -1176,12 +1179,14 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 			result.setOnLongClickListener( v -> LibraryFragment.this.onItemLongClick(null, null, index, 0));
 			
 			final ImageView image = (ImageView) result.findViewById(R.id.bookCover);
+            /*
             LOG.debug("=> RUTA IMAGEN2 "+object.getFileName());
             String[] id =object.getFileName().split("/");
             int valor = id.length -1 ;
             LOG.debug("==>ID ruta fichero2 " + id[valor]);
             String imagen= id[valor].replace(".epub","");
-
+            */
+            String imagen = object.getIdBook();
             String rutaImagen = (""+config.getLibraryFolder()).replace("Some: ","") +"/"+imagen+".jpg";
             //Drawable draw = coverCache.get(book.getFileName());
             LOG.debug("==>ID ruta fichero ruta imagen2" + rutaImagen);

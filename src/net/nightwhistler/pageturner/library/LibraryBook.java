@@ -74,7 +74,17 @@ public class LibraryBook implements Serializable {
 
 	public void setCoverImage(byte[] coverImage) {
 		this.coverImage = coverImage;
-	}	
+	}
+
+    public String getIdBook(){
+
+       // LOG.debug("=> RUTA IMAGEN COVER "+this.getFileName());
+        String[] id =this.getFileName().split("/");
+        int valor = id.length -1 ;
+     //   LOG.debug("==>ID ruta fichero COVER " + id[valor]);
+        String imagen= id[valor].replace(".epub","");
+        return imagen;
+    }
 
 	public Date getLastRead() {
 		return lastRead;

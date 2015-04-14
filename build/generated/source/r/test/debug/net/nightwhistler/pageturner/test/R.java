@@ -923,7 +923,7 @@ containing a value of this type.
         public static final int mediaPlayerLayout=0x7f080081;
         public static final int mediaProgress=0x7f080083;
         public static final int menu_search=0x7f08008e;
-        public static final int moreletterer=0x7f080091;
+        public static final int moreletter=0x7f080091;
         public static final int myTitleBarLayout=0x7f080076;
         public static final int myTitleBarTextView=0x7f080077;
         public static final int nextButton=0x7f080087;

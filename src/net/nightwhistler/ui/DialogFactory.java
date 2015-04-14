@@ -98,7 +98,7 @@ public class DialogFactory {
 
 		String html = "<h2>" + context.getString(R.string.app_name) + " </h2>";
 		html += context.getString(R.string.about_gpl);
-    	html += "<br/><a href='mailto:info@ebookspatagonia.com?subject=info'>"+context.getString(R.string.contact)+"</a>";
+    	html += "<br/><a href=\"mailto:info@ebookspatagonia.com?subject=info\">"+context.getString(R.string.contact)+"</a>";
 
 		builder.setMessage( Html.fromHtml(html));
 
