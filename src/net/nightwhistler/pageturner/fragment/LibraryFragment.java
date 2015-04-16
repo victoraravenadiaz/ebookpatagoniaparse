@@ -440,29 +440,14 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 				 + libraryBook.getAuthor().getLastName() );
 		authorView.setText( authorText );
 		//fileName.setText( libraryBook.getFileName() );
-
-        AssetManager am = context.getAssets();
+        //detalle de libro
         String detalleLibro = "";
-        try {
-            InputStream in = am.open("meta.json");
-            //String json = TextUtil.btoString(in);
-            String json = TextUtil.convertStreamToString(in);
-            if( in != null )
-            {
-                try{
-                    in.close();
-                }
-                catch( IOException ex )
-                {
-                    LOG.error(ex.getMessage());
-                }
-            }
-            LOG.debug("JSON =>"+json);
-              detalleLibro = buscarInformacion(json,libraryBook.getFileName());
+        String json=openJson("meta");
+        LOG.debug("00Javier===>");
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        detalleLibro = buscarInformacion(json,libraryBook.getIdBook());
+
+
 		if (libraryBook.getLastRead() != null && ! libraryBook.getLastRead().equals(new Date(0))) {
 			String lastReadText = String.format(getString(R.string.last_read),
 					DATE_FORMAT.format(libraryBook.getLastRead()));
@@ -502,34 +487,23 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 	}
 
     protected String  buscarInformacion(String jsonStr, String textoDocumento) {
-
-
-        if (jsonStr != null) {
-            try {
-                JSONObject jsonObj = new JSONObject(jsonStr);
-                // Getting JSON Array node
-                JSONArray pers = jsonObj.getJSONArray("");
-
-                // looping through All Equipos
-                for (int i = 0; i < pers.length(); i++) {
-                    JSONObject c = pers.getJSONObject(i);
-                    String eISBN = c.getString("eISBN");
-                    if(TextUtil.existeTexto(textoDocumento,eISBN)){
-                        //RECOJEMOS DATOS EN VARIABLES
-                        String descripcion = c.getString("Descripcion");
-                        return descripcion;
-                    }
-
-
+        String salida="";
+        try{
+            JSONArray jArray=new JSONArray(jsonStr);
+            for(int i=0;i<jArray.length();i++){
+                JSONObject json_data=jArray.getJSONObject(i);
+                if(json_data.getString("eISBNClean").equals(textoDocumento)){
+                    salida=json_data.getString("Descripcion");
                 }
-            } catch (JSONException e) {
-                e.printStackTrace();
             }
-        } else {
-            LOG.error("ServiceHandler", "Esta habiendo problemas para cargar el JSON");
+        }catch (JSONException e){
+            LOG.debug("JAVIER====>");
         }
-        return "";
+
+
+        return salida;
     }
+
 
 	private void openBook(LibraryBook libraryBook) {
 		Intent intent = new Intent(getActivity(), ReadingActivity.class);
@@ -1367,4 +1341,22 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 		}
 		
 	}
+
+    public String openJson(String name){
+        //lectura de json
+        AssetManager am = context.getAssets();
+        String json="";
+        try {
+            InputStream in = am.open(name+".json");
+            int size=in.available();
+            byte[] buffer=new byte[size];
+            in.read(buffer);
+            in.close();
+            json=new String(buffer, "UTF-8");
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+        LOG.debug("JAVIER===>"+json);
+        return json;
+    }
 }
