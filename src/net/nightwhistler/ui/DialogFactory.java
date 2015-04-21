@@ -130,7 +130,7 @@ public class DialogFactory {
     protected void sendMail() {
         Log.i("Javier", "");
 
-        String[] TO = {"javneira@gmail.com"};
+        String[] TO = {"info@ebookspatagonia.com"};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setData(Uri.parse("mailto:"));
         emailIntent.setType("text/plain");
