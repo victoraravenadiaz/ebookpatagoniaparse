@@ -17,6 +17,7 @@
  * along with PageTurner.  If not, see <http://www.gnu.org/licenses/>.*
  */
 package net.nightwhistler.pageturner.fragment;
+import java.io.ByteArrayOutputStream;
 import java.nio.channels.FileChannel;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -387,12 +388,18 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 
             File imageFile = new File(rutaImagen);
             LOG.debug("==>EXISTE  imagen COVER => " + imageFile.exists());
-
             Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
-
+           // Bitmap bitmapAux = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
+            //ByteArrayOutputStream bos = new ByteArrayOutputStream();
+           // bitmapAux.compress(Bitmap.CompressFormat.PNG, 0 /*ignored for PNG*/, bos);
+           // bitmapAux.recycle();
+            //Bitmap bitmap = BitmapFactory.decodeByteArray(bos.toByteArray(), 0, bos.toByteArray().length );
             //    Bitmap bitmap = BitmapFactory.decodeByteArray(book.getCoverImage(), 0, book.getCoverImage().length );
                 FastBitmapDrawable drawable = new FastBitmapDrawable(bitmap);
+
                 coverCache.put( book.getFileName(), drawable );
+
+
             //}
 
             return option(coverCache.get(book.getFileName()));
@@ -984,6 +991,11 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 		} else {
             File imageFile = new File(rutaImagen);
             Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
+
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            bitmap.compress(Bitmap.CompressFormat.PNG, 0 /*ignored for PNG*/, bos);
+            bitmap.recycle();
+
             imageView.setImageBitmap(bitmap);
 			//imageView.setImageDrawable(backupCover);
 			
@@ -1135,6 +1147,9 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 
             File imageFile = new File(rutaImagen);
             Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            bitmap.compress(Bitmap.CompressFormat.PNG, 0 /*ignored for PNG*/, bos);
+            bitmap.recycle();
             image.setImageBitmap(bitmap);
 			//image.setImageDrawable(backupCover);
         //  MODIFICADO POR VICTOR

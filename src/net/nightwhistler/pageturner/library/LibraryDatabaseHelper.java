@@ -24,15 +24,22 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import com.google.inject.Inject;
+
+import net.nightwhistler.pageturner.Configuration;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import roboguice.inject.ContextSingleton;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @ContextSingleton
 public class LibraryDatabaseHelper extends SQLiteOpenHelper {
-
+    private static final Logger LOG = LoggerFactory.getLogger("LibraryDatabaseHelper");
     private static final String LIB_BOOKS_TABLE = "lib_books";
 	
 	public enum Field { 
@@ -327,8 +334,19 @@ public class LibraryDatabaseHelper extends SQLiteOpenHelper {
 		try {
 			newBook.setLastRead(new Date(cursor.getLong(Field.date_last_read.ordinal())));
 		} catch (RuntimeException r){}
-		
+
+
+        /*String imagen = newBook.getIdBook();
+        Configuration config = new Configuration()
+        String rutaImagen = (""+config.getLibraryFolder()).replace("Some: ","") +"/"+imagen+".jpg";
+
+        //Drawable draw = coverCache.get(book.getFileName());
+        LOG.debug("==>ID ruta fichero ruta imagen COVER" + rutaImagen);
+          File imageFile = new File(rutaImagen);
+*/
+
 		byte[] coverData = cursor.getBlob(Field.cover_image.ordinal());
+
 		newBook.setCoverImage(coverData);			
 		
 		newBook.setFileName( cursor.getString(Field.file_name.ordinal()));
