@@ -85,19 +85,16 @@ public class SqlLiteLibraryService implements LibraryService {
     	}
     	
     	Option<byte[]> thumbNail = none();
-
-
-    	 //SIN RESIZE
-    	 // VICTOR
+    	/*
     	try {
-    		if ( book.getCoverImage() != null && book.getCoverImage().getSize() < MAX_COVER_SIZE ) {
+    		if ( book.getCoverImage() != null && book.getCoverImage().getSize() < MAX_COVER_SIZE ) {    			
     			thumbNail = resizeImage(book.getCoverImage().getData());
     			book.getCoverImage().close();
     		}
     	} catch (IOException | OutOfMemoryError e) {
     		//If the image resource is too big, just import without a cover.
     	}
-		
+		*/
     	String description = "";
     	
     	if ( ! metaData.getDescriptions().isEmpty() ) {
@@ -284,8 +281,8 @@ public class SqlLiteLibraryService implements LibraryService {
 		
 		int height = bitmapOrg.getHeight();
 		int width = bitmapOrg.getWidth();
-        //int height = 720;
-        //int width = 480;
+    //    int height = 720;
+    //    int width = 480;
 		int newHeight = THUMBNAIL_HEIGHT;
 
 		float scaleHeight = ((float) newHeight) / height;
