@@ -279,8 +279,10 @@ public class SqlLiteLibraryService implements LibraryService {
 			return none();
 		}
 		
-		int height = bitmapOrg.getHeight();
-		int width = bitmapOrg.getWidth();
+	//	int height = bitmapOrg.getHeight();
+	//	int width = bitmapOrg.getWidth();
+        int height = 720;
+        int width = 480;
 		int newHeight = THUMBNAIL_HEIGHT;
 
 		float scaleHeight = ((float) newHeight) / height;

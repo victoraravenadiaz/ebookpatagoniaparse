@@ -995,7 +995,7 @@ public class BookView extends ScrollView implements TextSelectionActions.Selecte
 				int[] targetSizes = calculateSize(originalWidth, originalHeight);
 				int targetWidth = targetSizes[0];
 				int targetHeight = targetSizes[1];
-				
+                LOG.debug("CALCULATE SIZE ");
 				if ( targetHeight != originalHeight || targetWidth != originalWidth ) {					
 					return Bitmap.createScaledBitmap(originalBitmap,
 							targetWidth, targetHeight, true);

@@ -42,6 +42,8 @@ repositories {
 }
 
 dependencies {
+    compile files('libs/gson-2.2.4.jar')
+
     compile(
         [group: 'com.actionbarsherlock', name:'actionbarsherlock', version:'4.4.0', ext: 'aar'],
         [group: 'com.android.support', name: 'support-v4', version: '19.0+'],
