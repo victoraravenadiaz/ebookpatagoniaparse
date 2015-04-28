@@ -17,7 +17,6 @@
  * along with PageTurner.  If not, see <http://www.gnu.org/licenses/>.*
  */
 package net.nightwhistler.pageturner.fragment;
-import java.lang.reflect.Type;
 import java.nio.channels.FileChannel;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -73,7 +72,6 @@ import net.nightwhistler.pageturner.view.FastBitmapDrawable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Text;
-import com.google.gson.*;
 
 import roboguice.inject.InjectView;
 
@@ -280,41 +278,9 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
                         }
 
                         writeToFile(in, ""+folder.getAbsolutePath() +"/"+files[i]);
-                        /*
-                        FileChannel origen = null;
-                        FileChannel destino = null;
-                        try {
-                            origen = (FileChannel) newChannel(in);
-                            destino = new FileOutputStream(outFile).getChannel();
+                       
 
-                            long count = 0;
-                            long size = origen.size();
-                            while((count += destino.transferFrom(origen, count, size-count))<size);
-                        }
-                        finally {
-                            if(origen != null) {
-                                origen.close();
-                            }
-                            if(destino != null) {
-                                destino.close();
-                            }
-                        }
-                        */
 
-                        //File outFile = new File(""+config.getLibraryFolder()
-                         //       +"/"+files[i]);
-                        /*
-                        LOG.debug("Copiando fichero "+ outFile.getAbsolutePath());
-                        OutputStream out = new FileOutputStream(outFile);
-
-                        byte[] buffer = new byte[1024];
-                        int read;
-                        while((read = in.read(buffer)) != -1){
-                            out.write(buffer, 0, read);
-                        }
-                        in.close();
-                        out.flush();
-                        out.close();*/
                         LOG.debug(" Name => "+files[i] + " => Tamaño    "+outFile.length());
                         LOG.debug(" Name => "+files[i] + " => Es un fichero    "+outFile.isFile());
                         LOG.debug(" Name => "+files[i] + " => Se puede leer    "+outFile.canRead());
@@ -474,25 +440,12 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 				 + libraryBook.getAuthor().getLastName() );
 		authorView.setText( authorText );
 		//fileName.setText( libraryBook.getFileName() );
-
-         //lectura de json
-        AssetManager am = context.getAssets();
+        //detalle de libro
         String detalleLibro = "";
-        String json="";
-        try {
-            InputStream in = am.open("meta.json");
-            int size=in.available();
-            byte[] buffer=new byte[size];
-            in.read(buffer);
-            in.close();
-            json=new String(buffer, "UTF-8");
-        }catch (IOException ex){
-            ex.printStackTrace();
-        }
-            LOG.debug("JSON =>"+libraryBook.getIdBook());
-            LOG.debug("JAVIER===>"+json);
+        String json=openJson("meta");
+        LOG.debug("00Javier===>");
 
-            detalleLibro = buscarInformacion(json,libraryBook.getIdBook());
+        detalleLibro = buscarInformacion(json,libraryBook.getIdBook());
 
 
 		if (libraryBook.getLastRead() != null && ! libraryBook.getLastRead().equals(new Date(0))) {
@@ -539,7 +492,7 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
             JSONArray jArray=new JSONArray(jsonStr);
             for(int i=0;i<jArray.length();i++){
                 JSONObject json_data=jArray.getJSONObject(i);
-                if(json_data.getString("eISBN").equals(textoDocumento)){
+                if(json_data.getString("eISBNClean").equals(textoDocumento)){
                     salida=json_data.getString("Descripcion");
                 }
             }
@@ -548,8 +501,9 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
         }
 
 
-    return salida;
+        return salida;
     }
+
 
 	private void openBook(LibraryBook libraryBook) {
 		Intent intent = new Intent(getActivity(), ReadingActivity.class);
@@ -1387,4 +1341,22 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 		}
 		
 	}
+
+    public String openJson(String name){
+        //lectura de json
+        AssetManager am = context.getAssets();
+        String json="";
+        try {
+            InputStream in = am.open(name+".json");
+            int size=in.available();
+            byte[] buffer=new byte[size];
+            in.read(buffer);
+            in.close();
+            json=new String(buffer, "UTF-8");
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+        LOG.debug("JAVIER===>"+json);
+        return json;
+    }
 }

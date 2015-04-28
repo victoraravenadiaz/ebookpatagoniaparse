@@ -14,6 +14,7 @@
     <string name="rolling_blind">Auto-scroll</string>
     <string name="contact">Contacto</string>
     <string name="about">Acerca de Ebook Patagonia</string>
+    <string name="about_gpl">Entre los autores de esta editorial se encuentra Mario Benedetti, Álvaro Bisama, Andrés Neuman, Pablo Simonetti, Walter Riso, Pía Barros, Oliverio Coelho, Valeria Luiselli entre otros. Ebooks Patagonia es una editorial digital que busca la difusión de las obras de autores latinoamericanos mediante la creación de libros electrónicos en formato EPUB con una diagramación digital elegante y visualmente atractiva y su posterior distribución digital global facilitando el acceso a nuestros lectores en todos los países del mundo.</string>
     <string name="error_open_bk">Error abriendo el libro: %s</string>
 
     <string name="dictionary_lookup">Buscar en el diccionario</string>

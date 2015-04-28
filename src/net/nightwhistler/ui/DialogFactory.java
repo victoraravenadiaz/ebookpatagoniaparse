@@ -19,18 +19,28 @@
 package net.nightwhistler.ui;
 
 import android.app.AlertDialog;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.net.Uri;
 import android.text.Html;
 import android.text.InputType;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.google.inject.Inject;
+
+import net.nightwhistler.pageturner.PageTurner;
 import net.nightwhistler.pageturner.R;
+import net.nightwhistler.pageturner.activity.CatalogActivity;
+import net.nightwhistler.pageturner.activity.PageTurnerActivity;
 
 public class DialogFactory {
 
@@ -87,6 +97,7 @@ public class DialogFactory {
 		AlertDialog.Builder builder = new AlertDialog.Builder(context);
 		builder.setTitle(R.string.about);
 		builder.setIcon(R.drawable.page_turner);
+        builder.setMessage(context.getString(R.string.about_gpl));
         // ACERCA DE
 		String version = "";
 		try {
@@ -96,16 +107,45 @@ public class DialogFactory {
 			// Huh? Really?
 		}
 
-		String html = "<h2>" + context.getString(R.string.app_name) + " </h2>";
-		html += context.getString(R.string.about_gpl);
-    	html += "<br/><a href=\"mailto:info@ebookspatagonia.com?subject=info\">"+context.getString(R.string.contact)+"</a>";
+		//String html = "<h2>" + context.getString(R.string.app_name) + " </h2>";
+		//html += context.getString(R.string.about_gpl);
+    	//html += "<br/><a href="+"mailto:info@ebookspatagonia.com?subject=info"+">"+context.getString(R.string.contact)+"</a>";
 
-		builder.setMessage( Html.fromHtml(html));
+		//builder.setMessage( Html.fromHtml(html));
+        builder.setPositiveButton(context.getString(R.string.contact),new DialogInterface.OnClickListener(){
+            @Override public void onClick(    DialogInterface dialog,    int which){
+                sendMail();
 
-		builder.setNeutralButton(context.getString(android.R.string.ok),
-                (dialog, which) -> dialog.dismiss() );
+            }});
+
+
+
+        builder.setNegativeButton(context.getString(android.R.string.ok),null);
+		//builder.setNeutralButton(context.getString(android.R.string.ok),
+          //      (dialog, which) -> dialog.dismiss() );
 
         return builder.create();
 	}
+
+    protected void sendMail() {
+        Log.i("Javier", "");
+
+        String[] TO = {"info@ebookspatagonia.com"};
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.setType("text/plain");
+
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Asunto");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "Mensaje");
+
+        try {
+            context.startActivity(Intent.createChooser(emailIntent, "Enviando Mail...."));
+        } catch (ActivityNotFoundException ex) {
+            Toast.makeText(context, "No hay cliente de correo electrónico instalado.", Toast.LENGTH_SHORT).show();
+
+        }
+
+    }
 
 }
