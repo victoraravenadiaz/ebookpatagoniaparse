@@ -37,8 +37,8 @@ public class FastBitmapDrawable extends Drawable {
             this.height = b.getHeight();
 
             LOG.debug("TAMANIO " +  this.width +  " " +  this.height );
-            this.width = 480;
-            this.height = 720;
+            //this.width = 480;
+            //this.height = 720;
 
         }
     }
