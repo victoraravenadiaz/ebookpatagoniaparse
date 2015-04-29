@@ -432,12 +432,12 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 		
 		ImageView coverView = (ImageView) layout.findViewById(R.id.coverImage );
 
-		//if ( libraryBook.getCoverImage() != null ) {
+		if ( libraryBook.getCoverImage() != null ) {
             Drawable coverDrawable = getCover(libraryBook).getOrElse(
                     getResources().getDrawable(R.drawable.unknown_cover) );
 
             coverView.setImageDrawable(coverDrawable);
-       // }
+        }
 
 		TextView titleView = (TextView) layout.findViewById(R.id.titleField);
 		TextView authorView = (TextView) layout.findViewById(R.id.authorField);
