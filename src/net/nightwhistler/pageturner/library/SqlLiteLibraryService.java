@@ -43,9 +43,12 @@ import static jedi.option.Options.some;
 @ContextSingleton
 public class SqlLiteLibraryService implements LibraryService {
 	
-	private static final int THUMBNAIL_HEIGHT = 250;
+	private static final int THUMBNAIL_HEIGHT = 450;
+
+    private static final int THUMBNAIL_WIDTH = 250;
 	
-	private static final long MAX_COVER_SIZE = 1024 * 1024; //Max 1Mb
+	////private static final long MAX_COVER_SIZE = 1024 * 1024; //Max 1Mb
+    private static final long MAX_COVER_SIZE = 2*1024 * 1024; //Max 2Mb
 
 	@Inject
 	private LibraryDatabaseHelper helper;	
@@ -62,7 +65,7 @@ public class SqlLiteLibraryService implements LibraryService {
 	
 	@Override
 	public void storeBook(String fileName, Book book, boolean updateLastRead, boolean copyFile) throws IOException {
-		
+		LOG.debug("Almacena =>"+book.getTitle());
 		File bookFile = new File(fileName);
 		
 		boolean hasBook = hasBook(bookFile.getName());
@@ -72,7 +75,7 @@ public class SqlLiteLibraryService implements LibraryService {
 		} else if ( hasBook ) {
 			helper.updateLastRead(bookFile.getName(), -1);
 			return;
-		}				
+		}
 		
 		Metadata metaData = book.getMetadata();
     	
@@ -85,7 +88,7 @@ public class SqlLiteLibraryService implements LibraryService {
     	}
     	
     	Option<byte[]> thumbNail = none();
-    	/*
+
     	try {
     		if ( book.getCoverImage() != null && book.getCoverImage().getSize() < MAX_COVER_SIZE ) {    			
     			thumbNail = resizeImage(book.getCoverImage().getData());
@@ -94,7 +97,7 @@ public class SqlLiteLibraryService implements LibraryService {
     	} catch (IOException | OutOfMemoryError e) {
     		//If the image resource is too big, just import without a cover.
     	}
-		*/
+
     	String description = "";
     	
     	if ( ! metaData.getDescriptions().isEmpty() ) {
@@ -281,16 +284,18 @@ public class SqlLiteLibraryService implements LibraryService {
 		
 		int height = bitmapOrg.getHeight();
 		int width = bitmapOrg.getWidth();
-    //    int height = 720;
-    //    int width = 480;
+        //int height = 720;
+        //int width = 480;
 		int newHeight = THUMBNAIL_HEIGHT;
-
+        int newWidth = THUMBNAIL_WIDTH;
 		float scaleHeight = ((float) newHeight) / height;
-
+        float scaleWidth = ((float) newWidth) / width;
+        LOG.debug("ESCALA "+scaleWidth+ " " +scaleHeight);
 		// create a matrix for the manipulation
 		Matrix matrix = new Matrix();
 		// resize the bit map
-		matrix.postScale(scaleHeight, scaleHeight);
+		//matrix.postScale(scaleHeight, scaleHeight);
+        matrix.postScale(scaleWidth, scaleHeight); // ESCALA WIDTH
 
 		// recreate the new Bitmap
 		Bitmap resizedBitmap = Bitmap.createBitmap(bitmapOrg, 0, 0,

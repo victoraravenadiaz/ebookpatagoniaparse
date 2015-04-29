@@ -128,7 +128,7 @@ public class DialogFactory {
 	}
 
     protected void sendMail() {
-        Log.i("Javier", "");
+      //  Log.i("Javier", "");
 
         String[] TO = {"info@ebookspatagonia.com"};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);

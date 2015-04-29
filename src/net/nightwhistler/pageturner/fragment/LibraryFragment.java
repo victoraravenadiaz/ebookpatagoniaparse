@@ -381,6 +381,9 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
             int valor = id.length -1 ;
             LOG.debug("==>ID ruta fichero COVER " + id[valor]);
             String imagen= id[valor].replace(".epub","");*/
+
+            /*
+            //FOTO CON JGP
             String imagen = book.getIdBook();
             String rutaImagen = (""+config.getLibraryFolder()).replace("Some: ","") +"/"+imagen+".jpg";
             //Drawable draw = coverCache.get(book.getFileName());
@@ -389,12 +392,15 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
             File imageFile = new File(rutaImagen);
             LOG.debug("==>EXISTE  imagen COVER => " + imageFile.exists());
             Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
+            */
            // Bitmap bitmapAux = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
             //ByteArrayOutputStream bos = new ByteArrayOutputStream();
            // bitmapAux.compress(Bitmap.CompressFormat.PNG, 0 /*ignored for PNG*/, bos);
            // bitmapAux.recycle();
             //Bitmap bitmap = BitmapFactory.decodeByteArray(bos.toByteArray(), 0, bos.toByteArray().length );
-            //    Bitmap bitmap = BitmapFactory.decodeByteArray(book.getCoverImage(), 0, book.getCoverImage().length );
+
+            //FOTO ANTERIOR
+                Bitmap bitmap = BitmapFactory.decodeByteArray(book.getCoverImage(), 0, book.getCoverImage().length );
                 FastBitmapDrawable drawable = new FastBitmapDrawable(bitmap);
 
                 coverCache.put( book.getFileName(), drawable );
@@ -450,7 +456,7 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
         //detalle de libro
         String detalleLibro = "";
         String json=openJson("meta");
-        LOG.debug("00Javier===>");
+        //LOG.debug("00Javier===>");
 
         detalleLibro = buscarInformacion(json,libraryBook.getIdBook());
 
@@ -504,7 +510,7 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
                 }
             }
         }catch (JSONException e){
-            LOG.debug("JAVIER====>");
+            //LOG.debug("JAVIER====>");
         }
 
 
@@ -978,30 +984,31 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
         LOG.debug("==>ID ruta fichero " + id[valor]);
         String imagen= id[valor].replace(".epub","");
         */
-        String imagen = book.getIdBook();
-        String rutaImagen = (""+config.getLibraryFolder()).replace("Some: ","") +"/"+imagen+".jpg";
-		//Drawable draw = coverCache.get(book.getFileName());
-      //  LOG.debug("==>ID ruta fichero ruta imagen" + rutaImagen);
-        Drawable draw = coverCache.get(rutaImagen);
+
+        ////String imagen = book.getIdBook();
+        ////String rutaImagen = (""+config.getLibraryFolder()).replace("Some: ","") +"/"+imagen+".jpg";
+		Drawable draw = coverCache.get(book.getFileName());
+      ////  LOG.debug("==>ID ruta fichero ruta imagen" + rutaImagen);
+        ////Drawable draw = coverCache.get(rutaImagen);
 		
 		if ( draw != null ) {
-           LOG.debug("==>ID ruta fichero ruta imagen LO HIZO" + rutaImagen);
+          //// LOG.debug("==>ID ruta fichero ruta imagen LO HIZO" + rutaImagen);
 
 			imageView.setImageDrawable(draw);
 		} else {
-            File imageFile = new File(rutaImagen);
-            Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
+            ////File imageFile = new File(rutaImagen);
+            ////Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
 
-            ByteArrayOutputStream bos = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.PNG, 0 /*ignored for PNG*/, bos);
-            bitmap.recycle();
+            ////ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            ////bitmap.compress(Bitmap.CompressFormat.PNG, 0 /*ignored for PNG*/, bos);
+            ////bitmap.recycle();
 
-            imageView.setImageBitmap(bitmap);
-			//imageView.setImageDrawable(backupCover);
+            ////imageView.setImageBitmap(bitmap);
+			imageView.setImageDrawable(backupCover);
 			
-			//if ( book.getCoverImage() != null ) {
+			if ( book.getCoverImage() != null ) {
 				callbacks.add( new CoverCallback(book, index, imageView ) );
-			//}
+			}
 		}
 	}	
 	
@@ -1140,6 +1147,10 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
             LOG.debug("==>ID ruta fichero2 " + id[valor]);
             String imagen= id[valor].replace(".epub","");
             */
+
+            /*
+
+            //FOTO CON JGP
             String imagen = object.getIdBook();
             String rutaImagen = (""+config.getLibraryFolder()).replace("Some: ","") +"/"+imagen+".jpg";
             //Drawable draw = coverCache.get(book.getFileName());
@@ -1148,9 +1159,10 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
             File imageFile = new File(rutaImagen);
             Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.PNG, 0 /*ignored for PNG*/, bos);
+            bitmap.compress(Bitmap.CompressFormat.PNG, 0, bos);
             bitmap.recycle();
-            image.setImageBitmap(bitmap);
+            image.setImageBitmap(bitmap);*/
+
 			//image.setImageDrawable(backupCover);
         //  MODIFICADO POR VICTOR
 		//	TextView text = (TextView) result.findViewById(R.id.bookLabel);
@@ -1371,7 +1383,7 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
         }catch (IOException ex){
             ex.printStackTrace();
         }
-        LOG.debug("JAVIER===>"+json);
+       // LOG.debug("JAVIER===>"+json);
         return json;
     }
 }
