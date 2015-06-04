@@ -814,7 +814,7 @@ containing a value of this type.
         public static final int zoom=0x7f0200a0;
     }
     public static final class id {
-        public static final int about=0x7f08008f;
+        public static final int about=0x7f080090;
         public static final int abs__action_bar=0x7f080020;
         public static final int abs__action_bar_container=0x7f08001f;
         public static final int abs__action_bar_subtitle=0x7f080011;
@@ -855,7 +855,7 @@ containing a value of this type.
         public static final int abs__title=0x7f08001b;
         public static final int abs__up=0x7f08000f;
         public static final int addToLibraryButton=0x7f080058;
-        public static final int add_bookmark=0x7f080093;
+        public static final int add_bookmark=0x7f080094;
         public static final int addedToLibrary=0x7f08004a;
         public static final int alphabetDivider=0x7f08006e;
         public static final int alphabetLabel=0x7f08003b;
@@ -901,7 +901,7 @@ containing a value of this type.
         public static final int fragment_file_browse=0x7f080038;
         public static final int fragment_library=0x7f080039;
         public static final int fragment_reading=0x7f08003a;
-        public static final int golibrary=0x7f080090;
+        public static final int golibrary=0x7f080091;
         public static final int groupName=0x7f08005c;
         public static final int homeAsUp=0x7f080005;
         public static final int importDialogLayout=0x7f08007a;
@@ -913,7 +913,7 @@ containing a value of this type.
         public static final int itemTitle=0x7f080053;
         public static final int lastRead=0x7f080049;
         public static final int left_drawer=0x7f080035;
-        public static final int lessletter=0x7f080092;
+        public static final int lessletter=0x7f080093;
         public static final int libHolder=0x7f08006b;
         public static final int libraryList=0x7f08006c;
         public static final int linearLayout1=0x7f08007d;
@@ -922,8 +922,8 @@ containing a value of this type.
         public static final int mainLayout=0x7f080050;
         public static final int mediaPlayerLayout=0x7f080081;
         public static final int mediaProgress=0x7f080083;
-        public static final int menu_search=0x7f08008e;
-        public static final int moreletter=0x7f080091;
+        public static final int menu_search=0x7f08008f;
+        public static final int moreletter=0x7f080092;
         public static final int myTitleBarLayout=0x7f080076;
         public static final int myTitleBarTextView=0x7f080077;
         public static final int nextButton=0x7f080087;
@@ -940,10 +940,11 @@ containing a value of this type.
         public static final int readNowButton=0x7f080057;
         public static final int readingProgress=0x7f08004f;
         public static final int rel=0x7f080070;
-        public static final int rolling_blind=0x7f080096;
+        public static final int rolling_blind=0x7f080097;
+        public static final int scan_books=0x7f08008e;
         public static final int scrollPane=0x7f08005f;
         public static final int search=0x7f08008a;
-        public static final int search_text=0x7f080094;
+        public static final int search_text=0x7f080095;
         public static final int secondDivider=0x7f08005a;
         public static final int selectBox=0x7f080068;
         public static final int shelves_view=0x7f08008b;
@@ -956,7 +957,7 @@ containing a value of this type.
         public static final int stopButton=0x7f080086;
         public static final int subtitleText=0x7f08005e;
         public static final int tabMode=0x7f080002;
-        public static final int text_to_speech=0x7f080095;
+        public static final int text_to_speech=0x7f080096;
         public static final int timeStamp=0x7f080089;
         public static final int titleField=0x7f080047;
         public static final int titleProgress=0x7f080079;
